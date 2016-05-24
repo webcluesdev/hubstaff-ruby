@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'hubstaff/ruby/version'
+require 'hubstaff/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "hubstaff-ruby"
-  spec.version       = Hubstaff::Ruby::VERSION
+  spec.name          = "hubstaff"
+  spec.version       = Hubstaff::VERSION
   spec.authors       = ["Smulligan85"]
   spec.email         = ["sean.mulligan85@gmail.com"]
 
-  spec.summary       = %q{A Ruby API Wrapper for the Hubstaff API}
+  spec.summary       = %q{Ruby API Wrapper for the Hubstaff API}
   spec.homepage      = "https://hubstaff.com/"
   spec.license       = "MIT"
 
@@ -29,7 +29,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-
-  spec.add_dependency "faraday"
-  spec.add_dependency "json"
 end
