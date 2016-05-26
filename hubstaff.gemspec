@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Smulligan85"]
   spec.email         = ["sean.mulligan85@gmail.com"]
 
-  spec.summary       = %q{Ruby API Wrapper for the Hubstaff API}
+  spec.summary       = %q{Ruby API Wrapper for the Hubstaff API v1}
   spec.homepage      = "https://hubstaff.com/"
   spec.license       = "MIT"
 
@@ -29,4 +29,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "dotenv"
+  spec.add_development_dependency "pry"
+
+  spec.add_dependency "faraday"
+  spec.add_dependency "json"
 end
