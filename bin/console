@@ -10,5 +10,10 @@ require "hubstaff"
 # require "pry"
 # Pry.start
 
+<<<<<<< HEAD
 require "irb"
 IRB.start
+=======
+require "pry"
+Pry.start
+>>>>>>> c048ab4ad15fbb8636a0e3f85cae1eb2ee0df558
