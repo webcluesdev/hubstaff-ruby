@@ -10,6 +10,14 @@ class Hubstaff::Client
       it "returns a collection of projects" do
         expect(@client.projects['projects']).to be_an_instance_of(Array)
       end
+
+      it "returns only active projects" do
+        expect(@client.projects("active")['projects'][0]['name']).to eq("Build Ruby Gem")
+      end
+
+      it "returns only archieved projects" do
+        expect(@client.projects("archieved")['projects']).to be_an_instance_of(Array)
+      end
     end
 
     describe '#find_project' do

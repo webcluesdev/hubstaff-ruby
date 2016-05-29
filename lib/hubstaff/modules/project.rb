@@ -5,8 +5,12 @@ require 'json'
 class Hubstaff::Client
   module Project
 
-    def projects
-      @projects ||= get_project("projects")
+    def projects(active=nil)
+      if active == "active" || active == "archived"
+        @projects ||= get_project("project?status=#{active}")
+      else
+        @projects ||= get_project("projects")
+      end
     end
 
     def find_project(project_id)
