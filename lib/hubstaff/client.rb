@@ -1,8 +1,10 @@
 require 'pry'
 require 'faraday'
 require 'json'
+require 'hubstaff/modules/organization'
 
 class Hubstaff::Client
+  include Organization
 
   def authenticate_client_and_return_auth_token(email, password)
     @response ||= Faraday.post do |req|
