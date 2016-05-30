@@ -1,8 +1,10 @@
 require 'pry'
 require 'faraday'
 require 'json'
+require 'hubstaff/modules/activity'
 
 class Hubstaff::Client
+  include Activity
 
   def authenticate_client_and_return_auth_token(email, password)
     @response ||= Faraday.post do |req|
