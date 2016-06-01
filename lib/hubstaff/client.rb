@@ -2,10 +2,17 @@ require 'pry'
 require 'faraday'
 require 'json'
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'hubstaff/modules/user.rb'
 
 class Hubstaff::Client
   include User
+=======
+require 'hubstaff/modules/organization'
+
+class Hubstaff::Client
+  include Organization
+>>>>>>> e7c508f7625e351f54e37de15331ea619032d41d
 =======
 require 'hubstaff/modules/organization'
 
