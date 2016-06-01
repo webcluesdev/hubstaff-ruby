@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'hubstaff/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "hubstaff"
+  spec.name          = "hubstaff-ruby"
   spec.version       = Hubstaff::VERSION
   spec.authors       = ["Smulligan85"]
   spec.email         = ["sean.mulligan85@gmail.com"]
