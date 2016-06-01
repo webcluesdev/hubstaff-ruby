@@ -3,6 +3,7 @@ require 'faraday'
 require 'json'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 require 'hubstaff/modules/user.rb'
 
 class Hubstaff::Client
@@ -19,6 +20,12 @@ require 'hubstaff/modules/organization'
 class Hubstaff::Client
   include Organization
 >>>>>>> e7c508f7625e351f54e37de15331ea619032d41d
+=======
+require 'hubstaff/modules/project'
+
+class Hubstaff::Client
+  include Project
+>>>>>>> 4d9099198ef880fa4b608af9c91ce10107f85be6
 
   def authenticate_client_and_return_auth_token(email, password)
     @response ||= Faraday.post do |req|
