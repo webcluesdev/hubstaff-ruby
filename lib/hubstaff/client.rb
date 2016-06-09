@@ -6,6 +6,8 @@ require 'hubstaff/modules/organization'
 require 'hubstaff/modules/project'
 require 'hubstaff/modules/activity'
 require 'hubstaff/modules/screenshot'
+require 'hubstaff/modules/note'
+require 'hubstaff/modules/weekly'
 
 class Hubstaff::Client
   include User
@@ -13,6 +15,14 @@ class Hubstaff::Client
   include Project
   include Activity
   include Screenshot
+  include Note
+  include Weekly
+
+  attr_reader :auth_token
+
+  def initialize(email, password, auth_token=nil)
+    @auth_token = auth_token || self.authenticate_client_and_return_auth_token(email, password)
+  end
 
   def authenticate_client_and_return_auth_token(email, password)
     @response ||= Faraday.post do |req|
