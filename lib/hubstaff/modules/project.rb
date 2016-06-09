@@ -4,11 +4,17 @@ require 'json'
 class Hubstaff::Client
   module Project
 
-    def projects(active=nil)
+    def projects(active=nil, offset=0)
       if active == "active" || active == "archived"
-        @projects = get_project("projects?status=#{active}")
+        @projects = connection.get("projects?status=#{active}") do |req|
+          req.params['offset'] = offset
+        end
+        @project_json = JSON.parse(@projects.body)
       else
-        @projects = get_project("projects")
+        @projects = connection.get("projects") do |req|
+          req.params['offset'] = offset
+        end
+        @project_json = JSON.parse(@projects.body)
       end
     end
 
@@ -16,8 +22,11 @@ class Hubstaff::Client
       @project = get_project("projects/#{project_id}")
     end
 
-    def find_project_members(project_id)
-      @members = get_project("projects/#{project_id}/members")
+    def find_project_members(project_id, offset=0)
+      @members = connection.get("projects/#{project_id}/members") do |req|
+        req.params['offset'] = offset
+      end
+      @members_json = JSON.parse(@members.body)
     end
 
     private
