@@ -4,29 +4,20 @@ require 'json'
 class Hubstaff::Client
   module Organization
 
-    def organizations(offset=0)
-      @orgs = connection.get("organizations") do |req|
-        req.params['offset'] = offset
-      end
-      @org_json = JSON.parse(@orgs.body)
+    def organizations
+      @orgs = get_url("organizations")
     end
 
     def find_organization(org_id)
       @found_org = get_url("organizations/#{org_id}")
     end
 
-    def find_org_projects(org_id, offset=0)
-      @org_projects = connection.get("organizations/#{org_id}/projects") do |req|
-        req.params['offset'] = offset
-      end
-      @org_project_json = JSON.parse(@org_projects.body)
+    def find_org_projects(org_id)
+      @org_projects = get_url("organizations/#{org_id}/projects")
     end
 
-    def find_org_members(org_id, offset=0)
-      @org_members = connection.get("organizations/#{org_id}/members") do |req|
-        req.params['offset'] = offset
-      end
-      @org_member_json = JSON.parse(@org_members.body)
+    def find_org_members(org_id)
+      @org_members = get_url("organizations/#{org_id}/members")
     end
 
     private
