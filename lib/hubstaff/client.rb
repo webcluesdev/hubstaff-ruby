@@ -9,6 +9,7 @@ require 'hubstaff/modules/screenshot'
 require 'hubstaff/modules/note'
 require 'hubstaff/modules/weekly'
 require 'hubstaff/modules/task'
+require 'hubstaff/modules/custom'
 
 class Hubstaff::Client
   include User
@@ -19,7 +20,8 @@ class Hubstaff::Client
   include Note
   include Weekly
   include Task
-
+  include Custom
+  
   attr_reader :auth_token
 
   def initialize(email, password, auth_token=nil)
