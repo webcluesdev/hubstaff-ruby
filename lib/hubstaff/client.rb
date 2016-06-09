@@ -8,6 +8,7 @@ require 'hubstaff/modules/activity'
 require 'hubstaff/modules/screenshot'
 require 'hubstaff/modules/note'
 require 'hubstaff/modules/weekly'
+require 'hubstaff/modules/task'
 
 class Hubstaff::Client
   include User
@@ -17,6 +18,7 @@ class Hubstaff::Client
   include Screenshot
   include Note
   include Weekly
+  include Task
 
   attr_reader :auth_token
 
