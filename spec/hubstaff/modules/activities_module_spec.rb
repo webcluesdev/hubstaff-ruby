@@ -26,7 +26,6 @@ class Hubstaff::Client
       it "returns a collection of activities starting at a offset" do
         expect(@client.activities("2016-05-24", "2016-05-24", offset: 0)).to be_an_instance_of(Hash)
       end
-
     end
   end
 end

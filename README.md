@@ -21,12 +21,11 @@ Or install it yourself as:
 ## Authentication
 
 Use your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/)
-Install the `dotenv gem` and create a `.env` file with your `APP_TOKEN` if not already
-created.
+Then, copy .env.local.sample to .env.local and substitute your own real values from your account.
 
 ```ruby
 require "dotenv"
-Dotenv.load(".env")
+Dotenv.load(".env.local")
 
 APP_TOKEN="<Hubstaff Application Token>"
 
@@ -97,6 +96,14 @@ json_data = client.find_user(61188)
 # => {"user": { "id":...}}
 
 ```
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, copy `.env.local.sample` to `.env.local` and substitute your own real values from your account. Finally, run `rake spec` to run the tests.
+
+You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 

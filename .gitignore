@@ -7,4 +7,4 @@
 /pkg/
 /spec/reports/
 /tmp/
-api_credentials.env
+.env.local

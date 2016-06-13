@@ -6,8 +6,8 @@ require 'hubstaff/version'
 Gem::Specification.new do |spec|
   spec.name          = "hubstaff-ruby"
   spec.version       = Hubstaff::VERSION
-  spec.authors       = ["Sean Mulligan"]
-  spec.email         = ["sean.mulligan85@gmail.com"]
+  spec.authors       = ["Sean Mulligan","Hook Engine","Raymond Cudjoe"]
+  spec.email         = ["sean.mulligan85@gmail.com","rkcudjoe@hookengine.com","rkcudjoe@gmail.com"]
 
   spec.summary       = %q{Ruby API Wrapper for the Hubstaff API v1}
   spec.homepage      = "https://hubstaff.com/"
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
@@ -33,7 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry"
 
 
-  spec.add_dependency "faraday"
-  spec.add_dependency "json"
-  spec.add_dependency "dotenv"
+  spec.add_runtime_dependency "faraday"
+  spec.add_runtime_dependency "json"
 end
