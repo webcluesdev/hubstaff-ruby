@@ -11,22 +11,21 @@ class Hubstaff::Client
   include Task
   include Custom
 
-  attr_reader :auth_token
+  attr_accessor :auth_token, :app_token
 
-  def initialize(email, password, auth_token=nil)
-    @auth_token = auth_token || self.authenticate_client_and_return_auth_token(email, password)
+  def initialize(app_token)
+    @app_token = app_token
   end
 
-  def authenticate_client_and_return_auth_token(email, password)
+  def authenticate(email, password)
     response ||= Faraday.post do |req|
       req.url "https://api.hubstaff.com/v1/auth"
       req.headers['Content-Type'] = 'application/json'
-      req.headers['App-Token'] = ENV['APP_TOKEN']
+      req.headers['App-Token'] = self.app_token
       req.params['email'] = email
       req.params['password'] = password
     end
-    auth_token = JSON.parse(response.body)['user']['auth_token']
-    auth_token
+    self.auth_token = JSON.parse(response.body)['user']['auth_token']
   end
 
   def connection
@@ -34,7 +33,7 @@ class Hubstaff::Client
       req.headers['Content-Type'] = 'application/json'
       req.headers['User-Agent'] = "Hubstaff-Ruby v#{Hubstaff::VERSION}"
       req.headers['Auth-Token'] = self.auth_token
-      req.headers['App-Token'] = ENV['APP_TOKEN']
+      req.headers['App-Token'] = self.app_token
       req.adapter Faraday.default_adapter
     end
   end

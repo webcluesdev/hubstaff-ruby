@@ -2,12 +2,14 @@ require 'spec_helper'
 
 module Hubstaff
   describe Client do
-    before(:each) do 
-      @client = Hubstaff::Client.new(ENV['APP_EMAIL'], ENV['APP_PASSWORD'], ENV['AUTH_TOKEN'])
+    before(:each) do
+      @client = Hubstaff::Client.new(ENV['APP_TOKEN'])
     end
-    describe  "#authenticate_client_and_return_auth_token" do
+    describe  "#authenticate" do
       it "returns the users auth_token" do
-        expect(@client.auth_token).to eq(ENV['AUTH_TOKEN'])
+        VCR.use_cassette 'api/client' do
+          expect(@client.authenticate(ENV['APP_EMAIL'], ENV['APP_PASSWORD'])).to eq(ENV['AUTH_TOKEN'])
+        end
       end
     end
   end
