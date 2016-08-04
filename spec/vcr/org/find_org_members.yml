@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubstaff.com/v1/organizations/27572/members?offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Hubstaff-Ruby v0.0.1
+      Auth-Token:
+      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      App-Token:
+      - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      connection:
+      - close
+      content-type:
+      - application/json
+      content-length:
+      - '146'
+      status:
+      - 200 OK
+      cache-control:
+      - max-age=0, private, must-revalidate
+      date:
+      - Tue, 02 Aug 2016 20:17:57 GMT
+      vary:
+      - Origin
+      strict-transport-security:
+      - max-age=31536000
+      x-request-id:
+      - 547d735e-e958-4107-8c0c-58445656e51c
+      etag:
+      - W/"7846c3a31086e61908f175f77bed7b72"
+      x-runtime:
+      - '0.089544'
+      x-rack-cache:
+      - miss
+      x-powered-by:
+      - Phusion Passenger 5.0.25
+      server:
+      - nginx/1.8.1 + Phusion Passenger 5.0.25
+      via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-05-24T01:25:21Z","email":"rkcudjoe@hookengine.com","pay_rate":"No
+        rate set"}]}'
+    http_version: 
+  recorded_at: Tue, 02 Aug 2016 20:17:57 GMT
+recorded_with: VCR 3.0.3
