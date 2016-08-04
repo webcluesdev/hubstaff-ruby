@@ -22,8 +22,7 @@ class Hubstaff::Client
       req.url "https://api.hubstaff.com/v1/auth"
       req.headers['Content-Type'] = 'application/json'
       req.headers['App-Token'] = self.app_token
-      req.params['email'] = email
-      req.params['password'] = password
+      req.body = { email: email, password: password }
     end
     self.auth_token = JSON.parse(response.body)['user']['auth_token']
   end
