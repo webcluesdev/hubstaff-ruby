@@ -60,8 +60,8 @@ API actions are available as methods on the client object. Currently, the Hubsta
 
 ### Authentication
 
-Use your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/)
-Then, copy .env.local.sample to .env.local and substitute your own real values from your account.
+Grab your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/)
+Then, copy the contents of ``.env.local.sample`` to ``.env.local`` and substitute your own values found in from your Hubstaff account.
 
 ```ruby
 require "dotenv"
