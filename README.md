@@ -60,29 +60,68 @@ API actions are available as methods on the client object. Currently, the Hubsta
 
 ### Authentication
 
-First, grab your personal ``APP_TOKEN`` found in [your account settings](https://developer.hubstaff.com/) and configure the ``hubstaff-ruby`` gem with your ``APP_TOKEN``. After that, you'll initialize a new client and fetch data from your account.
+First, grab your personal ``APP_TOKEN`` found in [your account settings](https://developer.hubstaff.com/) and initialize a new client with your ``APP_TOKEN``.
+
+After that, you'll authenticate the client and start exporting data from your account.
 
 ```ruby
+require "hubstaff"
 require "dotenv"
 Dotenv.load(".env.local")
 
-APP_TOKEN="<Hubstaff Application Token>"
+APP_TOKEN = "<hubstaff_app_token>"
+APP_EMAIL = "<hubstaff_account_email>"
+APP_PASSWORD = "<hubstaff_account_password>"
 
-client = Hubstaff::Client.new(<user_hubstaff_email>, <user_hubstaff_password>)
-client.auth_token #=> <Hubstaff Authentication Token>
+client = Hubstaff::Client.new(APP_TOKEN)
+
+client.authenticate(APP_EMAIL,APP_PASSWORD)
+
+client.auth_token
+#=> "<hubstaff_auth_token>"
 ```
 
 Here are some common use cases for the Hubstaff v1 API client.
 
 ### List users
 
-List all users and organization or project memberships for each user.
+You can list all users for a specific account, and get the details about their organization, and the projects they've worked on.
 
 ```ruby
+puts "#{ JSON.pretty_generate(client.users(true,true)) }"
 
-all_users = client.users(true, true)
-# => {"users": [{ "id":..., "organanizations": ["id":...], "projects": ["id":...]}]}
-
+#=>
+{
+  "users": [
+    {
+      "id": 61188,
+      "name": "Raymond Cudjoe",
+      "last_activity": "2016-05-24T01:25:21Z",
+      "email": "rkcudjoe@hookengine.com",
+      "organizations": [
+        {
+          "id": 27572,
+          "name": "Hook Engine",
+          "last_activity": "2016-05-24T01:25:21Z"
+        }
+      ],
+      "projects": [
+        {
+          "id": 112761,
+          "name": "Build Ruby Gem",
+          "last_activity": "2016-05-24T01:25:21Z",
+          "status": "Active"
+        },
+        {
+          "id": 120320,
+          "name": "Hubstaff API tutorial",
+          "last_activity": null,
+          "status": "Active"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ### Find a specific user
