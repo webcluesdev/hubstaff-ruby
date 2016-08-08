@@ -79,7 +79,6 @@ Here are some common use cases for the Hubstaff v1 API client.
 List all users and organization or project memberships for each user.
 
 ```ruby
-# hubstaff-data-export.rb
 
 all_users = client.users(true, true)
 # => {"users": [{ "id":..., "organanizations": ["id":...], "projects": ["id":...]}]}
