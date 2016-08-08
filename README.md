@@ -18,21 +18,6 @@ Or install it yourself as:
 
     $ gem install hubstaff-ruby
 
-## Authentication
-
-Use your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/)
-Then, copy .env.local.sample to .env.local and substitute your own real values from your account.
-
-```ruby
-require "dotenv"
-Dotenv.load(".env.local")
-
-APP_TOKEN="<Hubstaff Application Token>"
-
-client = Hubstaff::Client.new(<user_hubstaff_email>, <user_hubstaff_password>)
-client.auth_token #=> <Hubstaff Authentication Token>
-```
-
 ## Usage
 
 Calls for Hubstuff API v1 are relative to the base url https://api.hubstaff.com/v1/
@@ -72,6 +57,21 @@ API actions are available as methods on the client object. Currently, the Hubsta
 | List custom individual report by project | `#custom_project_my(start_date, end_date, options={})`  |
 
 ## Use Cases
+
+### Authentication
+
+Use your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/)
+Then, copy .env.local.sample to .env.local and substitute your own real values from your account.
+
+```ruby
+require "dotenv"
+Dotenv.load(".env.local")
+
+APP_TOKEN="<Hubstaff Application Token>"
+
+client = Hubstaff::Client.new(<user_hubstaff_email>, <user_hubstaff_password>)
+client.auth_token #=> <Hubstaff Authentication Token>
+```
 
 Here are some common use cases for the Hubstaff v1 API client.
 
