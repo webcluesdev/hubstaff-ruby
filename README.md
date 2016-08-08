@@ -60,7 +60,7 @@ API actions are available as methods on the client object. Currently, the Hubsta
 
 ### Authentication
 
-First, grab your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/) and configure the ``hubstaff-ruby`` gem with your ``APP_TOKEN``. After that, you initialize a new client and fetch data from your account.
+First, grab your personal ``APP_TOKEN`` found in [your account settings](https://developer.hubstaff.com/) and configure the ``hubstaff-ruby`` gem with your ``APP_TOKEN``. After that, you'll initialize a new client and fetch data from your account.
 
 ```ruby
 require "dotenv"
