@@ -56,16 +56,13 @@ API actions are available as methods on the client object. Currently, the Hubsta
 | List custom team report by project       | `#custom_project_team(start_date, end_date, options={})`|
 | List custom individual report by project | `#custom_project_my(start_date, end_date, options={})`  |
 
-## Use Cases
+## Usage Example
 
 ### Authentication
 
-Grab your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/)
-Then, copy the contents of ``.env.local.sample`` to ``.env.local`` and substitute your own values found in your Hubstaff account.
+First, grab your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/) and configure the ``hubstaff-ruby`` gem with your ``APP_TOKEN``. After that, you initialize a new client and fetch data from your account.
 
 ```ruby
-# hubstaff-data-export.rb
-
 require "dotenv"
 Dotenv.load(".env.local")
 
@@ -76,8 +73,6 @@ client.auth_token #=> <Hubstaff Authentication Token>
 ```
 
 Here are some common use cases for the Hubstaff v1 API client.
-
-First configure the ``hubstaff-ruby`` gem with your ``APP_TOKEN``, and initialize a new client. After that, you can fetch data from your account.
 
 ### List users
 
