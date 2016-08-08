@@ -61,9 +61,11 @@ API actions are available as methods on the client object. Currently, the Hubsta
 ### Authentication
 
 Grab your personal ``APP_TOKEN`` found in [your account settings.](https://developer.hubstaff.com/)
-Then, copy the contents of ``.env.local.sample`` to ``.env.local`` and substitute your own values found in from your Hubstaff account.
+Then, copy the contents of ``.env.local.sample`` to ``.env.local`` and substitute your own values found in your Hubstaff account.
 
 ```ruby
+# hubstaff-data-export.rb
+
 require "dotenv"
 Dotenv.load(".env.local")
 
@@ -82,7 +84,9 @@ First configure the ``hubstaff-ruby`` gem with your ``APP_TOKEN``, and initializ
 List all users and organization or project memberships for each user.
 
 ```ruby
-json_data = client.users(true, true)
+# hubstaff-data-export.rb
+
+all_users = client.users(true, true)
 # => {"users": [{ "id":..., "organanizations": ["id":...], "projects": ["id":...]}]}
 
 ```
