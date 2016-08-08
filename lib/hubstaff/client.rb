@@ -44,6 +44,7 @@ class Hubstaff::Client
   end
 
   def get_json(url)
-    JSON.parse(connection.get(url).body)
+    data = connection.get(url).body
+    JSON.parse(data)
   end
 end

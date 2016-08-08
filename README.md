@@ -66,8 +66,6 @@ After that, you'll authenticate the client and start exporting data from your ac
 
 ```ruby
 require "hubstaff"
-require "dotenv"
-Dotenv.load(".env.local")
 
 APP_TOKEN = "<hubstaff_app_token>"
 APP_EMAIL = "<hubstaff_account_email>"
