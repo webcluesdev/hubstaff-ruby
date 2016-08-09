@@ -122,12 +122,10 @@ puts "#{ JSON.pretty_generate(client.users(true,true)) }"
 }
 ```
 
-### Find a specific user
-
-Users can be looked up by their ``user_id``.
+### You can find specific users by their ``user_id``.
 
 ```ruby
-puts "#{ JSON.pretty_generate(client.users(true,true)) }"
+puts "#{ JSON.pretty_generate(client.find_user("61188")) }"
 
 #=>
 {
@@ -140,7 +138,7 @@ puts "#{ JSON.pretty_generate(client.users(true,true)) }"
 }
 ```
 
-### List all active projects
+### You can list all active projects.
 
 ```ruby
 puts "#{ JSON.pretty_generate(client.projects(true)) }"
@@ -166,7 +164,7 @@ puts "#{ JSON.pretty_generate(client.projects(true)) }"
 }
 ```
 
-### Retrieve screenshots for a specific project, within a specific time frame
+### Retrieve screenshots for a specific project, within a specific time frame.
 
 ```ruby
 puts "#{ JSON.pretty_generate(client.screenshots("2016-05-22","2016-05-24",projects: "112761")) }"
