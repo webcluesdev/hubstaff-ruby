@@ -81,9 +81,7 @@ client.auth_token
 
 Here are some common use cases for the Hubstaff v1 API client.
 
-### List users
-
-You can list all users for a specific account, and get the details about the organization, and the projects they've worked on.
+### You can list all users for a specific account, and get the details about the organization, and the projects they've worked on.
 
 ```ruby
 puts "#{ JSON.pretty_generate(client.users(true,true)) }"
@@ -164,7 +162,7 @@ puts "#{ JSON.pretty_generate(client.projects(true)) }"
 }
 ```
 
-### Retrieve screenshots for a specific project, within a specific time frame.
+### Retrieve screenshots for a specific project, within a specific timeframe.
 
 ```ruby
 puts "#{ JSON.pretty_generate(client.screenshots("2016-05-22","2016-05-24",projects: "112761")) }"
