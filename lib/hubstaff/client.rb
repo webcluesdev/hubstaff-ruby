@@ -13,17 +13,27 @@ class Hubstaff::Client
 
   attr_accessor :app_token, :auth_token
 
-  def initialize(app_token=nil, auth_token=nil)
+  def initialize(app_token=nil)
     @app_token = app_token
-    @auth_token = auth_token
   end
 
   def authenticate(email, password)
+    reset_connection
     response = auth_conn.post do |req|
       req.headers['App-Token'] = app_token
       req.body = { email: email, password: password }
     end
-    auth_token = JSON.parse(response.body)['user']['auth_token']
+    new_token = JSON.parse(response.body)['user']['auth_token']
+    auth_token = new_token
+  end
+
+  def auth_token=(new_token)
+    @auth_token = new_token
+    reset_connection
+  end
+
+  def reset_connection
+    @connection = nil
   end
 
   def auth_conn

@@ -29,17 +29,17 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Fri, 12 Aug 2016 04:11:38 GMT
+      - Fri, 12 Aug 2016 17:07:49 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - c56e5b6f-a2b8-485d-b8fd-e0f7dd98f142
+      - 1072f268-3e92-4303-9360-a14b1b338cfd
       etag:
       - W/"4e97488ea5a33bb7d4700432f9da12df"
       x-runtime:
-      - '0.243746'
+      - '2.129016'
       x-rack-cache:
       - invalidate, pass
       x-powered-by:
@@ -52,5 +52,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-05-24T01:25:21Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
     http_version: 
-  recorded_at: Fri, 12 Aug 2016 04:11:38 GMT
+  recorded_at: Fri, 12 Aug 2016 17:07:49 GMT
 recorded_with: VCR 3.0.3

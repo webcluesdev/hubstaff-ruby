@@ -3,7 +3,8 @@ require 'spec_helper'
 class Hubstaff::Client
   describe Custom do
     before(:each) do
-      @client = Hubstaff::Client.new(ENV['APP_TOKEN'],ENV['AUTH_TOKEN'])
+      @client = Hubstaff::Client.new(ENV['APP_TOKEN'])
+      @client.auth_token = ENV['AUTH_TOKEN']
     end
 
     describe '#custom_date_team' do
