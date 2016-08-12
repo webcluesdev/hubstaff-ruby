@@ -8,13 +8,13 @@ class Hubstaff::Client
 
     describe '#activities' do
       it "returns a collection of all activities" do
-        VCR.use_cassette('activity/activities', re_record_interval: 10) do
+        VCR.use_cassette('activity/activities', re_record_interval: 1000) do
           expect(@client.activities("2016-05-24", "2016-05-24")).to be_an_instance_of(Hash)
         end
       end
 
       it "returns a collection of activities for a specific org" do
-        VCR.use_cassette('activity/activities_org', re_record_interval: 10) do
+        VCR.use_cassette('activity/activities_org', re_record_interval: 1000) do
           expect(@client.activities("2016-05-24", "2016-05-24", orgs: "27572")).to be_an_instance_of(Hash)
         end
       end
