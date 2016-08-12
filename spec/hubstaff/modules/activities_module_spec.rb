@@ -20,19 +20,19 @@ class Hubstaff::Client
       end
 
       it "returns a collection of activities for a specific project" do
-        VCR.use_cassette('activity/activities_project', re_record_interval: 10) do
+        VCR.use_cassette('activity/activities_project', re_record_interval: 1000) do
           expect(@client.activities("2016-05-24", "2016-05-24", projects: "112761")).to be_an_instance_of(Hash)
         end
       end
 
       it "returns a collection of activities for a specific user" do
-        VCR.use_cassette('activity/activites_user', re_record_interval: 10) do
+        VCR.use_cassette('activity/activites_user', re_record_interval: 1000) do
           expect(@client.activities("2016-05-24", "2016-05-24", users: "61188")).to be_an_instance_of(Hash)
         end
       end
 
       it "returns a collection of activities starting at a offset" do
-        VCR.use_cassette('activity/activites_offset', re_record_interval: 10)do
+        VCR.use_cassette('activity/activites_offset', re_record_interval: 1000)do
           expect(@client.activities("2016-05-24", "2016-05-24", offset: 0)).to be_an_instance_of(Hash)
         end
       end
