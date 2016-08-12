@@ -11,35 +11,38 @@ class Hubstaff::Client
   include Task
   include Custom
 
-  attr_accessor :auth_token, :app_token
+  attr_accessor :app_token, :auth_token
 
-  def initialize(app_token)
-    @app_token ||= app_token
+  def initialize(app_token=nil, auth_token=nil)
+    @app_token = app_token
+    @auth_token = auth_token
   end
 
   def authenticate(email, password)
-    @response ||= auth_conn.post do |req|
-      req.headers['App-Token'] = self.app_token
+    response = auth_conn.post do |req|
+      req.headers['App-Token'] = app_token
       req.body = { email: email, password: password }
     end
-    self.auth_token = JSON.parse(@response.body)['user']['auth_token']
+    auth_token = JSON.parse(response.body)['user']['auth_token']
   end
 
   def auth_conn
-  @auth_conn ||= Faraday.new(:url => "https://api.hubstaff.com/v1/auth") do |req|
+    @auth_conn ||= Faraday.new(:url => "https://api.hubstaff.com/v1/auth") do |req|
       req.request :multipart
       req.request :url_encoded
-      req.adapter Faraday.default_adapter
+      req.adapter :net_http
     end
   end
 
   def connection
-   @connection ||= Faraday.new(:url => "https://api.hubstaff.com/v1/") do |req|
-      req.headers['Content-Type'] = 'application/json'
+   @connection ||= Faraday.new do |req|
+      req.url_prefix = "https://api.hubstaff.com/v1/"
+      req.adapter :net_http
+
+      req.headers['Content-Type'] = "application/json"
       req.headers['User-Agent'] = "Hubstaff-Ruby v#{Hubstaff::VERSION}"
-      req.headers['Auth-Token'] = self.auth_token
-      req.headers['App-Token'] = self.app_token
-      req.adapter Faraday.default_adapter
+      req.headers['App-Token'] =  app_token
+      req.headers['Auth-Token'] = auth_token
     end
   end
 

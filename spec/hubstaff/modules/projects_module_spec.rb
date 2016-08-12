@@ -3,8 +3,7 @@ require 'spec_helper'
 class Hubstaff::Client
   describe Project do
     before(:each) do
-      @client = Hubstaff::Client.new(ENV['APP_TOKEN'])
-      @client.auth_token = ENV['AUTH_TOKEN']
+      @client = Hubstaff::Client.new(ENV['APP_TOKEN'],ENV['AUTH_TOKEN'])
     end
 
     describe '#projects' do
