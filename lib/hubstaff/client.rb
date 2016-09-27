@@ -15,6 +15,7 @@ class Hubstaff::Client
 
   def initialize(app_token=nil)
     @app_token = app_token
+    @auth_token = auth_token
   end
 
   def authenticate(email, password)
@@ -24,7 +25,7 @@ class Hubstaff::Client
       req.body = { email: email, password: password }
     end
     new_token = JSON.parse(response.body)['user']['auth_token']
-    auth_token = new_token
+    @auth_token = new_token
   end
 
   def auth_token=(new_token)
