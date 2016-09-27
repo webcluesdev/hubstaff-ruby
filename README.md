@@ -68,11 +68,10 @@ After that, you'll authenticate the client and start exporting data from your ac
 require "hubstaff"
 
 APP_TOKEN = "<hubstaff_app_token>"
-AUTH_TOKEN = "<hubstaff_auth_token>"
 APP_EMAIL = "<hubstaff_account_email>"
 APP_PASSWORD = "<hubstaff_account_password>"
 
-client = Hubstaff::Client.new(APP_TOKEN,AUTH_TOKEN)
+client = Hubstaff::Client.new(APP_TOKEN)
 
 client.authenticate(APP_EMAIL,APP_PASSWORD)
 
