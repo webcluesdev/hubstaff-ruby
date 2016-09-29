@@ -31,17 +31,17 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Thu, 29 Sep 2016 14:45:13 GMT
+      - Thu, 29 Sep 2016 15:09:51 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 87d11be4-dd42-44cf-967c-8522c2bb3f45
+      - 86161089-871b-4c78-9dee-1e8a6ce78aac
       etag:
       - W/"2c1b8a6db5b665a6b9c8a883ea81bed5"
       x-runtime:
-      - '0.040092'
+      - '0.050155'
       x-rack-cache:
       - miss
       x-powered-by:
@@ -56,5 +56,5 @@ http_interactions:
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874,"notes":[{"id":716530,"description":"Practice Notes"}]}]}]}]}]}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 14:45:13 GMT
+  recorded_at: Thu, 29 Sep 2016 15:09:51 GMT
 recorded_with: VCR 3.0.3

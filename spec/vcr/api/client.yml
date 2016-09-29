@@ -15,7 +15,7 @@ http_interactions:
       - application/x-www-form-urlencoded
   response:
     status:
-      code: 200
+      code: 429
       message: 
     headers:
       connection:
@@ -23,23 +23,21 @@ http_interactions:
       content-type:
       - application/json
       content-length:
-      - '143'
+      - '44'
       status:
-      - 200 OK
+      - 429 Too Many Requests
       cache-control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       date:
-      - Thu, 29 Sep 2016 12:29:54 GMT
+      - Thu, 29 Sep 2016 14:46:22 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 1e2a7c92-8336-4798-a7b4-72c0083a0f93
-      etag:
-      - W/"4e97488ea5a33bb7d4700432f9da12df"
+      - 4077fa2d-7cbf-4336-9bbd-665ba836332c
       x-runtime:
-      - '0.542858'
+      - '0.011520'
       x-rack-cache:
       - invalidate, pass
       x-powered-by:
@@ -50,7 +48,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-05-24T01:25:21Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
+      string: '{"error":"You can''t make any more requests"}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 12:29:55 GMT
+  recorded_at: Thu, 29 Sep 2016 14:46:22 GMT
 recorded_with: VCR 3.0.3
