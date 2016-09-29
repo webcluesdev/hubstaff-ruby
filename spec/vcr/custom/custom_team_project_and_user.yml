@@ -11,10 +11,10 @@ http_interactions:
       - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
-      Auth-Token:
-      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
+      Auth-Token:
+      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
   response:
     status:
       code: 200
@@ -31,30 +31,30 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Tue, 02 Aug 2016 19:44:59 GMT
+      - Thu, 29 Sep 2016 14:40:49 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - c18b45b5-96d9-41c9-a2ea-a3981ab45ea3
+      - b88ad4f5-f614-4f0c-960e-4faa6298cfb2
       etag:
       - W/"32a3af3ead945c75a392c5267386b441"
       x-runtime:
-      - '0.041690'
+      - '0.044294'
       x-rack-cache:
       - miss
       x-powered-by:
-      - Phusion Passenger 5.0.25
+      - Phusion Passenger 5.0.30
       server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.25
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
       via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":7874,"projects":[{"id":112761,"name":"Build
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Tue, 02 Aug 2016 19:44:59 GMT
+  recorded_at: Thu, 29 Sep 2016 14:40:48 GMT
 recorded_with: VCR 3.0.3

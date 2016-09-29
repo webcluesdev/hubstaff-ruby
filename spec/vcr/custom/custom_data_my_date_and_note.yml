@@ -2,6 +2,59 @@
 http_interactions:
 - request:
     method: get
+    uri: https://api.hubstaff.com/v1/custom/by_date/my?end_date=2016-05-25&include_archieved&organizations&projects&show_activity&show_notes=true&show_tasks&start_date=2016-05-23&users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Hubstaff-Ruby v0.0.1
+      App-Token:
+      - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
+      Auth-Token:
+      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+  response:
+    status:
+      code: 400
+      message: 
+    headers:
+      connection:
+      - close
+      content-type:
+      - application/json
+      content-length:
+      - '63'
+      status:
+      - 400 Bad Request
+      cache-control:
+      - no-cache
+      date:
+      - Thu, 29 Sep 2016 13:22:10 GMT
+      vary:
+      - Origin
+      strict-transport-security:
+      - max-age=31536000
+      x-request-id:
+      - f6f6bf03-a84f-4425-9609-ff8b4bba4f38
+      x-runtime:
+      - '0.023006'
+      x-rack-cache:
+      - miss
+      x-powered-by:
+      - Phusion Passenger 5.0.30
+      server:
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
+      via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"error":"organizations: must be an array separated by commas"}'
+    http_version: 
+  recorded_at: Thu, 29 Sep 2016 13:22:10 GMT
+- request:
+    method: get
     uri: https://api.hubstaff.com/v1/custom/by_date/my?end_date=2016-05-25&show_notes=true&start_date=2016-05-23
     body:
       encoding: US-ASCII
@@ -11,10 +64,10 @@ http_interactions:
       - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
-      Auth-Token:
-      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
+      Auth-Token:
+      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
   response:
     status:
       code: 200
@@ -31,30 +84,30 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Tue, 02 Aug 2016 19:45:14 GMT
+      - Thu, 29 Sep 2016 14:45:12 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 566b31b0-69e6-476a-ac0e-d3df8657bc9e
+      - 4cc52a76-3bbd-4c80-b979-21897cd52a78
       etag:
       - W/"336fce3e184feb4fb6b1f0887e3425a5"
       x-runtime:
-      - '0.056032'
+      - '0.043708'
       x-rack-cache:
       - miss
       x-powered-by:
-      - Phusion Passenger 5.0.25
+      - Phusion Passenger 5.0.30
       server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.25
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
       via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874,"projects":[{"id":112761,"name":"Build Ruby Gem","duration":7874,"notes":[{"id":716530,"description":"Practice
         Notes"}]}]}]}]}]}'
     http_version: 
-  recorded_at: Tue, 02 Aug 2016 19:45:14 GMT
+  recorded_at: Thu, 29 Sep 2016 14:45:12 GMT
 recorded_with: VCR 3.0.3
