@@ -9,7 +9,7 @@ class Hubstaff::Client
 
     describe '#tasks' do
       it "returns a collection of tasks" do
-        VCR.use_cassette 'task/tasks' do
+        VCR.use_cassette('task/tasks' do
           expect(@client.tasks(projects: "112761")).to be_an_instance_of(Hash)
         end
       end

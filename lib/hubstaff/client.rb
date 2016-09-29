@@ -24,8 +24,8 @@ class Hubstaff::Client
       req.headers['App-Token'] = app_token
       req.body = { email: email, password: password }
     end
-    new_token = JSON.parse(response.body)['user']['auth_token']
-    @auth_token = new_token
+      new_token = JSON.parse(response.body)['user']['auth_token']
+      @auth_token = new_token
   end
 
   def auth_token=(new_token)
@@ -41,24 +41,26 @@ class Hubstaff::Client
     @auth_conn ||= Faraday.new(:url => "https://api.hubstaff.com/v1/auth") do |req|
       req.request :multipart
       req.request :url_encoded
+      req.response :json, content_type: /\bjson$/
       req.adapter :net_http
     end
+  end
+
+  def content_type
+    "application/json"
   end
 
   def connection
    @connection ||= Faraday.new do |req|
       req.url_prefix = "https://api.hubstaff.com/v1/"
-      req.adapter :net_http
+      req.response :json, content_type: /\bjson$/
 
-      req.headers['Content-Type'] = "application/json"
+      req.headers['Content-Type'] = content_type
       req.headers['User-Agent'] = "Hubstaff-Ruby v#{Hubstaff::VERSION}"
       req.headers['App-Token'] =  app_token
       req.headers['Auth-Token'] = auth_token
-    end
-  end
 
-  def get_json(url)
-    data = connection.get(url).body
-    JSON.parse(data)
+      req.adapter :net_http
+    end
   end
 end

@@ -11,10 +11,10 @@ http_interactions:
       - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
-      Auth-Token:
-      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
+      Auth-Token:
+      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
   response:
     status:
       code: 200
@@ -28,31 +28,31 @@ http_interactions:
       - '92'
       status:
       - 200 OK
+      x-rack-cache:
+      - miss
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Tue, 02 Aug 2016 18:23:06 GMT
+      - Thu, 29 Sep 2016 03:48:10 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
-      x-request-id:
-      - 42961418-4344-486d-936f-94d3b26760d1
       etag:
       - W/"7bd7378ce220cf2765d17e49f0b1d957"
       x-runtime:
-      - '0.041132'
-      x-rack-cache:
-      - miss
+      - '0.046153'
+      x-request-id:
+      - 4ad8daeb-42ad-4734-b364-7a9b4d5641ea
       x-powered-by:
-      - Phusion Passenger 5.0.25
+      - Phusion Passenger 5.0.30
       server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.25
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
       via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"organizations":[{"id":27572,"name":"Hook Engine","last_activity":"2016-05-24T01:25:21Z"}]}'
     http_version: 
-  recorded_at: Tue, 02 Aug 2016 18:23:06 GMT
+  recorded_at: Thu, 29 Sep 2016 03:48:10 GMT
 recorded_with: VCR 3.0.3

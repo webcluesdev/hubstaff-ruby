@@ -11,10 +11,10 @@ http_interactions:
       - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
-      Auth-Token:
-      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
+      Auth-Token:
+      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
   response:
     status:
       code: 200
@@ -31,29 +31,29 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Tue, 02 Aug 2016 18:18:57 GMT
+      - Thu, 29 Sep 2016 03:48:11 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 76dc57be-4674-49de-b14d-3890e75f54f5
+      - cd4d0816-ae5c-47f4-9ff0-3794e3ff0009
       etag:
       - W/"b49d2caa1abe08f1c56c8ebbfc82f346"
       x-runtime:
-      - '0.137179'
+      - '0.047563'
       x-rack-cache:
       - miss
       x-powered-by:
-      - Phusion Passenger 5.0.25
+      - Phusion Passenger 5.0.30
       server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.25
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
       via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"projects":[{"id":112761,"name":"Build Ruby Gem","last_activity":"2016-05-24T01:25:21Z","status":"Active","description":null},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":null,"status":"Active","description":null}]}'
     http_version: 
-  recorded_at: Tue, 02 Aug 2016 18:18:57 GMT
+  recorded_at: Thu, 29 Sep 2016 03:48:10 GMT
 recorded_with: VCR 3.0.3
