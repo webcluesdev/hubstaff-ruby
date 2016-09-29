@@ -31,15 +31,15 @@ http_interactions:
       cache-control:
       - no-cache
       date:
-      - Thu, 29 Sep 2016 15:31:10 GMT
+      - Thu, 29 Sep 2016 15:41:40 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 834298fe-92cf-492f-884d-b2423ce1d8b2
+      - 4806148e-6096-4881-b29d-f692df46469c
       x-runtime:
-      - '0.012721'
+      - '0.009114'
       x-rack-cache:
       - miss
       x-powered-by:
@@ -52,5 +52,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"projects: must be an array separated by commas"}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 15:31:10 GMT
+  recorded_at: Thu, 29 Sep 2016 15:41:40 GMT
 recorded_with: VCR 3.0.3

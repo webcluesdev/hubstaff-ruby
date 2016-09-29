@@ -9,36 +9,41 @@ class Hubstaff::Client
 
     describe '#projects' do
       it "returns a collection of projects" do
-        VCR.use_cassette 'project/projects' do
-          expect(@client.projects['projects']).to be_an_instance_of(Array)
+        VCR.use_cassette('project/projects', re_record_interval: 1000) do
+          req = @client.projects
+          expect(req.success?).to be_truthy
         end
       end
 
       it "returns only active projects" do
-        VCR.use_cassette 'project/projects_active' do
-          expect(@client.projects("active")['projects'][0]['name']).to eq("Build Ruby Gem")
+        VCR.use_cassette('project/projects_active', re_record_interval: 1000) do
+          req = @client.projects("active")
+          expect(req.success?).to be_truthy
         end
       end
 
       it "returns only archieved projects" do
-        VCR.use_cassette 'project/projects_archieved' do
-          expect(@client.projects("archieved")['projects']).to be_an_instance_of(Array)
+        VCR.use_cassette('project/projects_archieved', re_record_interval: 1000) do
+          req = @client.projects("archieved")
+          expect(req.success?).to be_truthy
         end
       end
     end
 
     describe '#find_project' do
       it "returns a specific project" do
-        VCR.use_cassette 'project/find_project' do
-          expect(@client.find_project(112761)).to be_an_instance_of(Hash)
+        VCR.use_cassette('project/find_project', re_record_interval: 1000) do
+          req = @client.find_project("112761")
+          expect(req.success?).to be_truthy
         end
       end
     end
 
     describe '#find_project_members' do
       it "returns a collection of members for a specific project" do
-        VCR.use_cassette 'project/find_project_members' do
-          expect(@client.find_project_members(112761)['users']).to be_an_instance_of(Array)
+        VCR.use_cassette('project/find_project_members', re_record_interval: 1000) do
+          req = @client.find_project_members("112761")
+          expect(req.success?).to be_truthy
         end
       end
     end
