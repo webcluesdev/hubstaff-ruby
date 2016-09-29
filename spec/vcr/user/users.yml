@@ -31,17 +31,17 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Thu, 29 Sep 2016 15:09:19 GMT
+      - Thu, 29 Sep 2016 15:15:44 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 66d4f874-7bcb-45d5-b875-7136dea2a4a6
+      - 70d214b9-d3b6-4c4f-b105-cc36e1a325b1
       etag:
-      - W/"7f016c4f9bfda93bc679768bd956487c"
+      - W/"cc512081bf45d840cb456de999baf644"
       x-runtime:
-      - '0.761446'
+      - '0.775585'
       x-rack-cache:
       - miss
       x-powered-by:
@@ -52,7 +52,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T15:00:00Z","email":"rkcudjoe@hookengine.com"}]}'
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T15:11:53Z","email":"rkcudjoe@hookengine.com"}]}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 15:09:19 GMT
+  recorded_at: Thu, 29 Sep 2016 15:15:44 GMT
 recorded_with: VCR 3.0.3

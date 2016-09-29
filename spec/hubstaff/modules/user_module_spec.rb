@@ -41,7 +41,7 @@ class Hubstaff::Client
     describe "#find_user" do
       it "returns a specific user in a hash" do
         VCR.use_cassette('user/find_user', re_record_interval: 1000) do
-          req = @client.find_user(61188)
+          req = @client.find_user("61188")
           expect(req.success?).to be_truthy
         end
       end
@@ -50,7 +50,7 @@ class Hubstaff::Client
     describe "#find_user_orgs" do
       it "returns all user orgs in a array" do
         VCR.use_cassette('user/find_user_orgs', re_record_interval: 1000) do
-          req = @client.find_user_orgs(61188)
+          req = @client.find_user_orgs("61188")
           expect(req.success?).to be_truthy
         end
       end
@@ -59,7 +59,7 @@ class Hubstaff::Client
     describe "#find_user_projects" do
       it "returns all user projects in a array" do
         VCR.use_cassette('user/find_user_projects', re_record_interval: 1000) do
-          req = @client.find_user_projects(61188)
+          req = @client.find_user_projects("61188")
           expect(req.success?).to be_truthy
         end
       end

@@ -31,15 +31,15 @@ http_interactions:
       cache-control:
       - no-cache
       date:
-      - Thu, 29 Sep 2016 14:46:27 GMT
+      - Thu, 29 Sep 2016 15:14:11 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 62708d81-8920-4d71-bca5-9ee4ff248a04
+      - 41f7fe2f-8fcc-4b2f-803c-9377164dffa3
       x-runtime:
-      - '0.031326'
+      - '0.026263'
       x-rack-cache:
       - miss
       x-powered-by:
@@ -52,5 +52,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"Could not find record"}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 14:46:27 GMT
+  recorded_at: Thu, 29 Sep 2016 15:14:11 GMT
 recorded_with: VCR 3.0.3
