@@ -5,11 +5,11 @@ class Hubstaff::Client
       case status
       when "active" || "archived"
         connection.get("projects?status=#{status}") do |req|
-          req.params['offset'] = offset
+          add_offset(req,offset)
         end
       else
       connection.get("projects") do |req|
-          req.params['offset'] = offset
+          add_offset(req,offset)
         end
       end
     end
@@ -20,8 +20,14 @@ class Hubstaff::Client
 
     def find_project_members(project_id, offset=0)
       connection.get("projects/#{project_id}/members") do |req|
-        req.params['offset'] = offset
+        add_offset(req,offset)
       end
+    end
+
+    private
+
+    def add_offset(req,offset)
+      req.params['offset'] = offset
     end
   end
 end

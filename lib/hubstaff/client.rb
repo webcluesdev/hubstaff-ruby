@@ -20,12 +20,10 @@ class Hubstaff::Client
 
   def authenticate(email, password)
     reset_connection
-    response = auth_conn.post do |req|
+    @auth_token = auth_conn.post do |req|
       req.headers['App-Token'] = app_token
       req.body = { email: email, password: password }
     end
-      new_token = JSON.parse(response.body)['user']['auth_token']
-      @auth_token = new_token
   end
 
   def auth_token=(new_token)

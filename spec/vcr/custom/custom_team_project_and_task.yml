@@ -31,17 +31,17 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Thu, 29 Sep 2016 15:31:07 GMT
+      - Thu, 29 Sep 2016 20:15:48 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - 870f26ff-9b77-48bf-850b-4b443b449f94
+      - 898db650-f9e9-44b0-b695-0358776f9277
       etag:
       - W/"32a3af3ead945c75a392c5267386b441"
       x-runtime:
-      - '0.038999'
+      - '0.076830'
       x-rack-cache:
       - miss
       x-powered-by:
@@ -56,5 +56,5 @@ http_interactions:
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 15:31:07 GMT
+  recorded_at: Thu, 29 Sep 2016 20:15:48 GMT
 recorded_with: VCR 3.0.3

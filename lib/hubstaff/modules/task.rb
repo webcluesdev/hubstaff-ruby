@@ -1,9 +1,8 @@
 class Hubstaff::Client
   module Task
-
     def tasks(projects, offset=0)
       connection.get("tasks") do |req|
-        req.params['projects'] = projects #unless projects.empty?
+        req.params['projects'] = projects unless projects.empty?
         req.params['offset'] = offset
       end
     end

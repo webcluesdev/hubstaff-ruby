@@ -31,17 +31,17 @@ http_interactions:
       cache-control:
       - max-age=0, private, must-revalidate
       date:
-      - Thu, 29 Sep 2016 15:41:43 GMT
+      - Thu, 29 Sep 2016 20:15:59 GMT
       vary:
       - Origin
       strict-transport-security:
       - max-age=31536000
       x-request-id:
-      - ff11e963-19d0-43da-89cc-c534d813ae3f
+      - 31a19933-a7b4-4298-b4ec-559ca8819f1b
       etag:
-      - W/"5595d9d40eeaf9443edda24b198463e9"
+      - W/"c8f05b8579e0d06fc56d36535bda1986"
       x-runtime:
-      - '0.744788'
+      - '0.896430'
       x-rack-cache:
       - miss
       x-powered-by:
@@ -52,9 +52,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T15:30:00Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
-        Ruby Gem","last_activity":"2016-09-29T15:30:00Z","status":"Active"},{"id":120320,"name":"Hubstaff
-        API tutorial","last_activity":null,"status":"Active"}]}]}'
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T18:48:58Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
+        Ruby Gem","last_activity":"2016-09-29T18:48:58Z","status":"Active"},{"id":120320,"name":"Hubstaff
+        API tutorial","last_activity":"2016-09-29T17:55:17Z","status":"Active"}]}]}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 15:41:43 GMT
+  recorded_at: Thu, 29 Sep 2016 20:15:59 GMT
 recorded_with: VCR 3.0.3
