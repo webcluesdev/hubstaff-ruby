@@ -1,5 +1,8 @@
 # Hubstaff Ruby Client
 
+[![Build
+Status](https://semaphoreci.com/api/v1/rkcudjoe/hubstaff-ruby/branches/master/badge.svg)](https://semaphoreci.com/rkcudjoe/hubstaff-ruby)
+
 A Ruby toolkit for [Hubstaff](https://hubstaff.com/) API.
 
 ## Installation
@@ -211,7 +214,7 @@ puts "#{ JSON.pretty_generate(client.screenshots("2016-05-22","2016-05-24",proje
     }
   ]
 }
-``` 
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, copy `.env.local.sample` to `.env.local` and substitute your own real values from your account. Finally, run `rake spec` to run the tests.
