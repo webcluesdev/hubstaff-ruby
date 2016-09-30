@@ -8,51 +8,55 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/json
+      - application/vnd.api+json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
       - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      content-length:
+      Content-Length:
       - '118'
-      status:
+      Status:
       - 200 OK
-      cache-control:
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 20:16:00 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:45:52 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - afb49743-d3dd-402e-a000-5d00f25fc2ba
-      etag:
-      - W/"092d71d3535779a0afb6823429c8e79a"
-      x-runtime:
-      - '0.060585'
-      x-rack-cache:
+      X-Request-Id:
+      - 575cfcf3-25bd-46c2-82e1-6e7f14966e89
+      Etag:
+      - W/"d08e08df0ba6ea7036de4ac86dffe3a9"
+      X-Runtime:
+      - '0.027927'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T18:48:58Z","email":"rkcudjoe@hookengine.com"}}'
+      string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T20:29:14Z","email":"rkcudjoe@hookengine.com"}}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:15:59 GMT
+  recorded_at: Fri, 30 Sep 2016 03:45:52 GMT
 recorded_with: VCR 3.0.3

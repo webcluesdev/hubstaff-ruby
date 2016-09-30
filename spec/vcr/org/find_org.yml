@@ -8,51 +8,55 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/json
+      - application/vnd.api+json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
       - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      content-length:
+      Content-Length:
       - '89'
-      status:
+      Status:
       - 200 OK
-      cache-control:
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 20:15:52 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:45:45 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - b3b5d4c8-32b2-44da-a76e-dd152daa0105
-      etag:
-      - W/"49f4ffa1f68b3bfa0fe6faeae7d4f72b"
-      x-runtime:
-      - '0.058320'
-      x-rack-cache:
+      X-Request-Id:
+      - cb57937e-96b6-4139-85f4-4e037d681c1e
+      Etag:
+      - W/"8187d09c556daa48cdb7b719b1040291"
+      X-Runtime:
+      - '0.030912'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"organization":{"id":27572,"name":"Hook Engine","last_activity":"2016-09-29T18:48:58Z"}}'
+      string: '{"organization":{"id":27572,"name":"Hook Engine","last_activity":"2016-09-29T20:29:14Z"}}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:15:52 GMT
+  recorded_at: Fri, 30 Sep 2016 03:45:45 GMT
 recorded_with: VCR 3.0.3

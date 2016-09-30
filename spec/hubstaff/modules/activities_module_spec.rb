@@ -9,7 +9,7 @@ class Hubstaff::Client
 
     describe '#activities' do
       it "returns a collection of all activities" do
-        VCR.use_cassette('activity/activities', re_record_interval: 1) do
+        VCR.use_cassette('activity/activities', re_record_interval: 1000) do
           req = @client.activities("2016-05-24", "2016-05-24")
           expect(req.success?).to be_truthy
         end
@@ -37,7 +37,7 @@ class Hubstaff::Client
       end
 
       it "returns a collection of activities starting at a offset" do
-        VCR.use_cassette('activity/activites_offset', re_record_interval: 1000)do
+        VCR.use_cassette('activity/activites_offset', re_record_interval: 1)do
           req = @client.activities("2016-05-24", "2016-05-24", offset: 0)
           expect(req.success?).to be_truthy
         end

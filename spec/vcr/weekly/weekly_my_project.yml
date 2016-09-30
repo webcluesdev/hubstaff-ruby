@@ -64,52 +64,56 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/json
+      - application/vnd.api+json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
       - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      status:
+      Status:
       - 200 OK
-      cache-control:
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 20:16:03 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:46:27 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - 42e64c3a-3671-483a-ab7d-7853910de575
-      etag:
-      - W/"1b49a7f12a6bb80c00aae170c8a278e4"
-      x-runtime:
-      - '0.048211'
-      x-rack-cache:
+      X-Request-Id:
+      - e70989af-b314-4383-b997-89fea189a0c5
+      Etag:
+      - W/"cbf3dd0e0ad7e96be8c7416b6380d224"
+      X-Runtime:
+      - '0.055630'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":11138,"users":[{"id":61188,"name":"Raymond
-        Cudjoe","duration":11138,"dates":[{"date":"2016-09-29","duration":11138}]}]}]}'
+      string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":11821,"users":[{"id":61188,"name":"Raymond
+        Cudjoe","duration":11821,"dates":[{"date":"2016-09-29","duration":11821}]}]}]}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:16:03 GMT
+  recorded_at: Fri, 30 Sep 2016 03:46:27 GMT
 recorded_with: VCR 3.0.3

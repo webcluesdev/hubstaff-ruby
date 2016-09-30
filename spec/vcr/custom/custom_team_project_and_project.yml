@@ -8,47 +8,51 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/json
+      - application/vnd.api+json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
       - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      status:
+      Status:
       - 200 OK
-      cache-control:
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 20:15:48 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:45:40 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - 6dda0403-2ceb-4ec4-877e-d90687fc3b4b
-      etag:
+      X-Request-Id:
+      - 9783c85f-85c4-4de4-af73-caf9489e0b63
+      Etag:
       - W/"32a3af3ead945c75a392c5267386b441"
-      x-runtime:
-      - '0.073013'
-      x-rack-cache:
+      X-Runtime:
+      - '0.053139'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
@@ -56,5 +60,5 @@ http_interactions:
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:15:47 GMT
+  recorded_at: Fri, 30 Sep 2016 03:45:40 GMT
 recorded_with: VCR 3.0.3

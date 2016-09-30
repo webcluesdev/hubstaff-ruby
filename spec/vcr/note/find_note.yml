@@ -8,51 +8,55 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/json
+      - application/vnd.api+json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
       - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      status:
+      Status:
       - 200 OK
-      cache-control:
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 20:15:52 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:45:44 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - 292becdb-d017-464b-8648-189c6e2024bc
-      etag:
+      X-Request-Id:
+      - 773f4936-c5b2-4ca5-8659-ce89fb874319
+      Etag:
       - W/"57d2d09ca2ac08ebe955a9694baa5fbc"
-      x-runtime:
-      - '0.089150'
-      x-rack-cache:
+      X-Runtime:
+      - '0.078112'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"note":{"id":716530,"description":"Practice Notes","time_slot":"2016-05-23T22:20:00Z","recorded_at":"2016-06-04T19:08:22Z","user_id":61188,"project_id":112761}}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:15:51 GMT
+  recorded_at: Fri, 30 Sep 2016 03:45:44 GMT
 recorded_with: VCR 3.0.3

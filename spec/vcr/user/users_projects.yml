@@ -8,53 +8,57 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/json
+      - application/vnd.api+json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
       - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      status:
+      Status:
       - 200 OK
-      cache-control:
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 20:15:59 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:45:52 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - 31a19933-a7b4-4298-b4ec-559ca8819f1b
-      etag:
-      - W/"c8f05b8579e0d06fc56d36535bda1986"
-      x-runtime:
-      - '0.896430'
-      x-rack-cache:
+      X-Request-Id:
+      - 1e51f860-6164-4ca3-8dee-ac037ad485bd
+      Etag:
+      - W/"96ac1d760bd5c70ab5a7a15a7ec3c0cf"
+      X-Runtime:
+      - '0.854454'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T18:48:58Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
-        Ruby Gem","last_activity":"2016-09-29T18:48:58Z","status":"Active"},{"id":120320,"name":"Hubstaff
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T20:29:14Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
+        Ruby Gem","last_activity":"2016-09-29T20:29:14Z","status":"Active"},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":"2016-09-29T17:55:17Z","status":"Active"}]}]}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:15:59 GMT
+  recorded_at: Fri, 30 Sep 2016 03:45:52 GMT
 recorded_with: VCR 3.0.3

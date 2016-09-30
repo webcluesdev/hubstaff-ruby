@@ -8,49 +8,53 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/json
+      - application/vnd.api+json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
       - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 400
-      message: 
+      message: Bad Request
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      content-length:
+      Content-Length:
       - '58'
-      status:
+      Status:
       - 400 Bad Request
-      cache-control:
+      Cache-Control:
       - no-cache
-      date:
-      - Thu, 29 Sep 2016 20:15:55 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:45:47 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - a4b0b19f-859a-4147-9ec8-84f1f4a2d844
-      x-runtime:
-      - '0.020838'
-      x-rack-cache:
+      X-Request-Id:
+      - 97ed0510-b50c-4f71-84ab-d1ed3f044275
+      X-Runtime:
+      - '0.012830'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"error":"projects: must be an array separated by commas"}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:15:55 GMT
+  recorded_at: Fri, 30 Sep 2016 03:45:47 GMT
 recorded_with: VCR 3.0.3

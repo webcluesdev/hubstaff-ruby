@@ -2,55 +2,61 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.hubstaff.com/v1/auth
+    uri: https://api.hubstaff.com/v1/auth?email=rkcudjoe@hookengine.com&password=hookdev001
     body:
       encoding: UTF-8
-      string: email=rkcudjoe%40hookengine.com&password=hookdev001
+      string: ''
     headers:
+      Content-Type:
+      - application/vnd.api+json
       User-Agent:
-      - Faraday v0.9.2
+      - Hubstaff-Ruby v0.0.1
+      Accept:
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
-      Content-Type:
-      - application/x-www-form-urlencoded
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      content-length:
+      Content-Length:
       - '143'
-      status:
+      Status:
       - 200 OK
-      cache-control:
+      Cache-Control:
       - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 20:15:34 GMT
-      vary:
+      Date:
+      - Fri, 30 Sep 2016 03:45:29 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - 0d76217b-0010-4649-a561-44cfa6ddefe4
-      etag:
-      - W/"3c20e5d403ad961b7dcb95a276ed3a77"
-      x-runtime:
-      - '0.485815'
-      x-rack-cache:
+      X-Request-Id:
+      - 76ee351c-2ba6-4887-aeb2-6ff8098753ef
+      Etag:
+      - W/"58cb807aded7d11b2d2071b30c1095f7"
+      X-Runtime:
+      - '0.205000'
+      X-Rack-Cache:
       - invalidate, pass
-      x-powered-by:
+      X-Powered-By:
       - Phusion Passenger 5.0.30
-      server:
+      Server:
       - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
+      Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T18:48:58Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
+      string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T20:29:14Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
     http_version: 
-  recorded_at: Thu, 29 Sep 2016 20:15:34 GMT
+  recorded_at: Fri, 30 Sep 2016 03:45:30 GMT
 recorded_with: VCR 3.0.3
