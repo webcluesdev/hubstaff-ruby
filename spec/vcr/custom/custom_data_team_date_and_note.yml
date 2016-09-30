@@ -88,17 +88,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Fri, 30 Sep 2016 13:01:33 GMT
+      - Fri, 30 Sep 2016 13:11:50 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 935c892a-631f-4bb2-8f04-5ba727302fe6
+      - 3ebb14d7-29e1-4fd5-bc91-4b0dc19c73a2
       Etag:
       - W/"336fce3e184feb4fb6b1f0887e3425a5"
       X-Runtime:
-      - '0.080480'
+      - '0.052391'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -113,5 +113,5 @@ http_interactions:
         Cudjoe","duration":7874,"projects":[{"id":112761,"name":"Build Ruby Gem","duration":7874,"notes":[{"id":716530,"description":"Practice
         Notes"}]}]}]}]}]}'
     http_version: 
-  recorded_at: Fri, 30 Sep 2016 13:01:35 GMT
+  recorded_at: Fri, 30 Sep 2016 13:11:52 GMT
 recorded_with: VCR 3.0.3

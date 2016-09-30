@@ -91,17 +91,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Fri, 30 Sep 2016 13:01:53 GMT
+      - Fri, 30 Sep 2016 13:11:57 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 95afa6e4-ea48-4e3d-bc7a-b31ce5fb12e6
+      - 59a7fe91-37cd-4ff8-b8b5-bb7fdad68b8e
       Etag:
       - W/"cbf3dd0e0ad7e96be8c7416b6380d224"
       X-Runtime:
-      - '0.031238'
+      - '0.043795'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -115,5 +115,5 @@ http_interactions:
       string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":11821,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":11821,"dates":[{"date":"2016-09-29","duration":11821}]}]}]}'
     http_version: 
-  recorded_at: Fri, 30 Sep 2016 13:01:55 GMT
+  recorded_at: Fri, 30 Sep 2016 13:11:59 GMT
 recorded_with: VCR 3.0.3
