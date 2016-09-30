@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - '*/*'
+      - "*/*"
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
@@ -35,17 +35,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Fri, 30 Sep 2016 03:45:41 GMT
+      - Fri, 30 Sep 2016 13:01:41 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - d756b3ed-d4ef-4a83-a7a6-e12f41ea519d
+      - 088c04cd-1122-43ac-befc-5b7b4d48c750
       Etag:
       - W/"32a3af3ead945c75a392c5267386b441"
       X-Runtime:
-      - '0.189933'
+      - '0.044936'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -55,10 +55,10 @@ http_interactions:
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":7874,"projects":[{"id":112761,"name":"Build
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Fri, 30 Sep 2016 03:45:42 GMT
+  recorded_at: Fri, 30 Sep 2016 13:01:44 GMT
 recorded_with: VCR 3.0.3
