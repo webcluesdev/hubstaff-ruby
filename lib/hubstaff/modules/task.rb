@@ -4,6 +4,7 @@ class Hubstaff::Client
       connection.get("tasks") do |req|
         req.params['projects'] = projects unless projects.empty?
         req.params['offset'] = offset
+        parse_response(req)
       end
     end
 

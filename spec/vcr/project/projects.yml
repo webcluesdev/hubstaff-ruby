@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - "*/*"
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
@@ -35,17 +35,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Fri, 30 Sep 2016 13:01:45 GMT
+      - Wed, 05 Oct 2016 14:25:15 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 85d47611-23de-4aad-8358-ef8c0d844e30
+      - d87bf751-a53f-4399-93c0-584688b1d5d5
       Etag:
       - W/"e6b52471bf6802b38071fdd04001135b"
       X-Runtime:
-      - '0.022145'
+      - '0.106902'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -55,9 +55,9 @@ http_interactions:
       Via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"projects":[{"id":112761,"name":"Build Ruby Gem","last_activity":"2016-09-29T20:29:14Z","status":"Active","description":null},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":"2016-09-29T17:55:17Z","status":"Active","description":null}]}'
     http_version: 
-  recorded_at: Fri, 30 Sep 2016 13:01:48 GMT
+  recorded_at: Wed, 05 Oct 2016 14:25:15 GMT
 recorded_with: VCR 3.0.3

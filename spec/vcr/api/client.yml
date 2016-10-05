@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - "*/*"
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Content-Length:
@@ -21,31 +21,29 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 200
-      message: OK
+      code: 429
+      message: Too Many Requests
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Content-Length:
-      - '143'
+      - '44'
       Status:
-      - 200 OK
+      - 429 Too Many Requests
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       Date:
-      - Fri, 30 Sep 2016 13:01:30 GMT
+      - Wed, 05 Oct 2016 13:07:10 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - bd6fb547-ec05-4953-9b08-1d91ac3cebca
-      Etag:
-      - W/"58cb807aded7d11b2d2071b30c1095f7"
+      - 72b5cbcc-d111-4125-b691-bf2cc5a6e004
       X-Runtime:
-      - '0.210304'
+      - '0.024072'
       X-Rack-Cache:
       - invalidate, pass
       X-Powered-By:
@@ -56,7 +54,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T20:29:14Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
+      string: '{"error":"You can''t make any more requests"}'
     http_version: 
-  recorded_at: Fri, 30 Sep 2016 13:01:33 GMT
+  recorded_at: Wed, 05 Oct 2016 13:07:11 GMT
 recorded_with: VCR 3.0.3

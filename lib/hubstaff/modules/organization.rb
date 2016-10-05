@@ -4,6 +4,7 @@ class Hubstaff::Client
     def organizations(offset=0)
       connection.get("organizations") do |req|
         add_offset(req,offset)
+        parse_response(req)
       end
     end
 
@@ -14,12 +15,14 @@ class Hubstaff::Client
     def find_org_projects(org_id, offset=0)
       connection.get("organizations/#{org_id}/projects") do |req|
         add_offset(req,offset)
+        parse_response(req)
       end
     end
 
     def find_org_members(org_id, offset=0)
       connection.get("organizations/#{org_id}/members") do |req|
         add_offset(req,offset)
+        parse_response(req)
       end
     end
 

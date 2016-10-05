@@ -5,6 +5,7 @@ class Hubstaff::Client
       connection.get("custom/by_date/team") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
+        parse_response(req)
       end
     end
 
@@ -12,6 +13,7 @@ class Hubstaff::Client
       connection.get("custom/by_date/my") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
+        parse_response(req)
       end
     end
 
@@ -19,13 +21,15 @@ class Hubstaff::Client
       connection.get("custom/by_member/team") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
+        parse_response(req)
       end
     end
 
     def custom_member_my(start_date, end_date, options={})
-    connection.get("custom/by_member/my") do |req|
+      connection.get("custom/by_member/my") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
+        parse_response(req)
       end
     end
 
@@ -33,6 +37,7 @@ class Hubstaff::Client
       connection.get("custom/by_project/team") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
+        parse_response(req)
       end
     end
 
@@ -40,6 +45,7 @@ class Hubstaff::Client
       connection.get("custom/by_project/my") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
+        parse_response(req)
       end
     end
 

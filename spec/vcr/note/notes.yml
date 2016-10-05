@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - "*/*"
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
@@ -35,17 +35,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Fri, 30 Sep 2016 13:01:43 GMT
+      - Wed, 05 Oct 2016 14:25:11 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - e6d63a0e-2a0b-458d-8c50-010f017f8770
+      - 1bb8c584-fb7e-40f4-921e-0e273e2ed7c6
       Etag:
       - W/"0261e46d499a3d25147275d7cfb8c27b"
       X-Runtime:
-      - '0.062721'
+      - '0.043661'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -55,8 +55,8 @@ http_interactions:
       Via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"notes":[{"id":716530,"description":"Practice Notes","time_slot":"2016-05-23T22:20:00Z","recorded_at":"2016-06-04T19:08:22Z","user_id":61188,"project_id":112761}]}'
     http_version: 
-  recorded_at: Fri, 30 Sep 2016 13:01:46 GMT
+  recorded_at: Wed, 05 Oct 2016 14:25:11 GMT
 recorded_with: VCR 3.0.3

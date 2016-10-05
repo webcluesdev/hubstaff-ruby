@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - "*/*"
+      - '*/*'
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
@@ -35,15 +35,15 @@ http_interactions:
       Cache-Control:
       - no-cache
       Date:
-      - Fri, 30 Sep 2016 13:01:47 GMT
+      - Wed, 05 Oct 2016 14:25:17 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 266b283f-3f12-4cad-abc1-746b5a4d22c2
+      - 1a9f2147-a6f5-469f-94b1-6afa5d002ff7
       X-Runtime:
-      - '0.054215'
+      - '0.014928'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"projects: must be an array separated by commas"}'
     http_version: 
-  recorded_at: Fri, 30 Sep 2016 13:01:49 GMT
+  recorded_at: Wed, 05 Oct 2016 14:25:17 GMT
 recorded_with: VCR 3.0.3

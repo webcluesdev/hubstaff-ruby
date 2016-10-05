@@ -21,9 +21,10 @@ module Hubstaff
 
     def authenticate(email, password)
       reset_connection
-      @auth_token = auth_conn.post do |req|
+      @auth_token ||= auth_conn.post do |req|
         req.headers['App-Token'] = app_token
         req.params = { email: email, password: password }
+        @auth_token = req.response['user']['auth_token']
       end
     end
 
@@ -34,6 +35,20 @@ module Hubstaff
 
     def reset_connection
       @connection = nil
+    end
+
+    def connection
+      @connection ||= Faraday.new do |req|
+        req.adapter :net_http
+        req.url_prefix = "https://api.hubstaff.com/v1/"
+
+        req_headers(req)
+
+        req.headers['App-Token'] =  app_token
+        req.headers['Auth-Token'] = auth_token
+
+        req.response :json, content_type: /\bjson$/
+      end
     end
 
     def auth_conn
@@ -56,17 +71,12 @@ module Hubstaff
       "application/vnd.api+json"
     end
 
-    def connection
-      @connection ||= Faraday.new do |req|
-        req.adapter :net_http
-        req.url_prefix = "https://api.hubstaff.com/v1/"
-
-        req_headers(req)
-
-        req.headers['App-Token'] =  app_token
-        req.headers['Auth-Token'] = auth_token
-
-        req.response :json, content_type: /\bjson$/
+    def parse_response(response)
+      case response
+      when 200..201
+        return JSON.parse(response)
+      when %w( 400  )
+        return "#{ response.status } : #{ response.body }"
       end
     end
   end
