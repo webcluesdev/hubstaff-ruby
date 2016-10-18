@@ -17,7 +17,9 @@ class Hubstaff::Client
     end
 
     def find_project(project_id)
-      connection.get("projects/#{project_id}")
+      connection.get("projects/#{project_id}") do |req|
+        parse_response(req)
+      end
     end
 
     def find_project_members(project_id, offset=0)

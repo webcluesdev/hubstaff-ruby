@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - '*/*'
+      - "*/*"
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
@@ -35,17 +35,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Wed, 05 Oct 2016 14:25:13 GMT
+      - Tue, 18 Oct 2016 14:23:40 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 35283422-3c39-4251-883d-392deb2bd1ac
+      - 8445bef1-08e5-4896-97cf-e8a530065c90
       Etag:
       - W/"98512207768d7e16b31ae1ce22026e5c"
       X-Runtime:
-      - '0.203938'
+      - '0.029937'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"organizations":[{"id":27572,"name":"Hook Engine","last_activity":"2016-09-29T20:29:14Z"}]}'
     http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:25:14 GMT
+  recorded_at: Tue, 18 Oct 2016 14:23:42 GMT
 recorded_with: VCR 3.0.3

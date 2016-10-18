@@ -21,10 +21,10 @@ module Hubstaff
 
     def authenticate(email, password)
       reset_connection
-      @auth_token ||= auth_conn.post do |req|
+      @auth_token = auth_conn.post do |req|
         req.headers['App-Token'] = app_token
         req.params = { email: email, password: password }
-        @auth_token = req.response['user']['auth_token']
+        parse_response(req)
       end
     end
 
@@ -41,12 +41,9 @@ module Hubstaff
       @connection ||= Faraday.new do |req|
         req.adapter :net_http
         req.url_prefix = "https://api.hubstaff.com/v1/"
-
         req_headers(req)
-
         req.headers['App-Token'] =  app_token
         req.headers['Auth-Token'] = auth_token
-
         req.response :json, content_type: /\bjson$/
       end
     end
@@ -74,9 +71,11 @@ module Hubstaff
     def parse_response(response)
       case response
       when 200..201
-        return JSON.parse(response)
-      when %w( 400  )
-        return "#{ response.status } : #{ response.body }"
+        return JSON.parse(response.body)
+      when 400, 401, 403, 404, 406, 409, 429, 500, 502, 503
+        return JSON.parse(response.body)
+      else
+        return "Unexpected Error From Hubstaff-Ruby."
       end
     end
   end

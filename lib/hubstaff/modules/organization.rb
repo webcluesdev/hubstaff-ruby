@@ -9,7 +9,9 @@ class Hubstaff::Client
     end
 
     def find_organization(org_id)
-      connection.get("organizations/#{org_id}")
+      connection.get("organizations/#{org_id}") do |req|
+        parse_response(req)
+      end
     end
 
     def find_org_projects(org_id, offset=0)

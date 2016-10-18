@@ -12,7 +12,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - '*/*'
+      - "*/*"
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
@@ -35,17 +35,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Wed, 05 Oct 2016 14:25:16 GMT
+      - Tue, 18 Oct 2016 14:23:41 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 5944228c-dc45-4c94-8c08-60f6d988c534
+      - 660ae814-f80e-4d67-a7f6-9e782183c04c
       Etag:
       - W/"ef43e9f210f64e7ab6301fb81d3324bb"
       X-Runtime:
-      - '0.038672'
+      - '0.028218'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"project":{"id":112761,"name":"Build Ruby Gem","last_activity":"2016-09-29T20:29:14Z","status":"Active","description":null}}'
     http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:25:16 GMT
+  recorded_at: Tue, 18 Oct 2016 14:23:44 GMT
 recorded_with: VCR 3.0.3

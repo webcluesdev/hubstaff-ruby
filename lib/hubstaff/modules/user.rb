@@ -11,7 +11,9 @@ class Hubstaff::Client
     end
 
     def find_user(user_id)
-      connection.get("users/#{user_id}")
+      connection.get("users/#{user_id}") do |req|
+        parse_response(req)
+      end
     end
 
     def find_user_orgs(user_id, offset=0)

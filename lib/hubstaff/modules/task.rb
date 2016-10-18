@@ -9,7 +9,9 @@ class Hubstaff::Client
     end
 
     def find_task(task_id)
-      connection.get("tasks/#{task_id}")
+      connection.get("tasks/#{task_id}") do |req|
+        parse_response(req)
+      end
     end
   end
 end

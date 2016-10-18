@@ -68,7 +68,7 @@ http_interactions:
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
-      - '*/*'
+      - "*/*"
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
       Auth-Token:
@@ -91,17 +91,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Wed, 05 Oct 2016 14:25:26 GMT
+      - Tue, 18 Oct 2016 14:27:27 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 01b74b5f-4bcb-4839-afd7-1b5d150d88a5
+      - 4f5d06da-35c0-48b2-b7dc-9e38b3cae134
       Etag:
       - W/"0002b794793eb0ac3c6eba0af45cdec5"
       X-Runtime:
-      - '0.105613'
+      - '0.053257'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -114,5 +114,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"organizations":[]}'
     http_version: 
-  recorded_at: Wed, 05 Oct 2016 14:25:26 GMT
+  recorded_at: Tue, 18 Oct 2016 14:27:30 GMT
 recorded_with: VCR 3.0.3

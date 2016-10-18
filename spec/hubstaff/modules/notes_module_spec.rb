@@ -46,7 +46,7 @@ class Hubstaff::Client
 
     describe '#find_note' do
       it "returns a specific note" do
-        VCR.use_cassette('note/find_note', re_record_interval: 1000) do
+        VCR.use_cassette('note/find_note', re_record_interval: 1) do
           req = @client.find_note("716530")
           expect(req.success?).to be_truthy
         end

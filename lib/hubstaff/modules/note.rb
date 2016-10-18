@@ -10,7 +10,9 @@ class Hubstaff::Client
     end
 
     def find_note(note_id)
-      connection.get("notes/#{note_id}")
+      connection.get("notes/#{note_id}") do |req|
+        parse_response(req)
+      end
     end
 
     private
