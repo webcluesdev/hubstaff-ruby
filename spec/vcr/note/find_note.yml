@@ -32,22 +32,22 @@ http_interactions:
       - chunked
       Status:
       - 200 OK
+      X-Rack-Cache:
+      - miss
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Tue, 18 Oct 2016 14:27:23 GMT
+      - Thu, 20 Oct 2016 15:30:17 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
-      X-Request-Id:
-      - 332abd11-14b3-4c68-a25a-fababcaf2610
       Etag:
       - W/"57d2d09ca2ac08ebe955a9694baa5fbc"
       X-Runtime:
-      - '0.045870'
-      X-Rack-Cache:
-      - miss
+      - '0.376238'
+      X-Request-Id:
+      - cd68902e-d3d5-47a0-9712-9b7abcc3640b
       X-Powered-By:
       - Phusion Passenger 5.0.30
       Server:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"note":{"id":716530,"description":"Practice Notes","time_slot":"2016-05-23T22:20:00Z","recorded_at":"2016-06-04T19:08:22Z","user_id":61188,"project_id":112761}}'
     http_version: 
-  recorded_at: Tue, 18 Oct 2016 14:27:26 GMT
+  recorded_at: Thu, 20 Oct 2016 15:30:20 GMT
 recorded_with: VCR 3.0.3

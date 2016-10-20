@@ -91,17 +91,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Tue, 18 Oct 2016 14:27:26 GMT
+      - Thu, 20 Oct 2016 15:30:25 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - ab24a193-1bab-45a4-b076-240616b6bcaa
+      - e7ccba75-d419-4d36-9c13-b124fefbd830
       Etag:
       - W/"0002b794793eb0ac3c6eba0af45cdec5"
       X-Runtime:
-      - '0.055253'
+      - '0.074650'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -114,5 +114,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"organizations":[]}'
     http_version: 
-  recorded_at: Tue, 18 Oct 2016 14:27:29 GMT
+  recorded_at: Thu, 20 Oct 2016 15:30:28 GMT
 recorded_with: VCR 3.0.3

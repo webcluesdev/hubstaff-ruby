@@ -75,7 +75,7 @@ module Hubstaff
       when 400, 401, 403, 404, 406, 409, 429, 500, 502, 503
         return JSON.parse(response.body)
       else
-        return "Unexpected Error From Hubstaff-Ruby."
+        return "Unexpected Error from hubstaff-ruby"
       end
     end
   end

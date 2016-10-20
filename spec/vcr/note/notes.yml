@@ -35,17 +35,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Tue, 18 Oct 2016 14:23:39 GMT
+      - Thu, 20 Oct 2016 15:30:16 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 7450dcdb-5913-4219-88e4-9b77f706f1aa
+      - 9ba0757d-c411-4ba0-bc04-8bcd6585763d
       Etag:
       - W/"0261e46d499a3d25147275d7cfb8c27b"
       X-Runtime:
-      - '0.027290'
+      - '0.027141'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"notes":[{"id":716530,"description":"Practice Notes","time_slot":"2016-05-23T22:20:00Z","recorded_at":"2016-06-04T19:08:22Z","user_id":61188,"project_id":112761}]}'
     http_version: 
-  recorded_at: Tue, 18 Oct 2016 14:23:41 GMT
+  recorded_at: Thu, 20 Oct 2016 15:30:19 GMT
 recorded_with: VCR 3.0.3

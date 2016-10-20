@@ -87,7 +87,7 @@ Here are some common use cases for the Hubstaff v1 API client.
 ### You can list all users for a specific account, and get the details about the organization, and the projects they've worked on.
 
 ```ruby
-puts "#{ JSON.pretty_generate(client.users(true,true)) }"
+client.users(true,true)
 
 #=>
 {
@@ -126,7 +126,7 @@ puts "#{ JSON.pretty_generate(client.users(true,true)) }"
 ### You can find specific users by their ``user_id``.
 
 ```ruby
-puts "#{ JSON.pretty_generate(client.find_user("61188")) }"
+client.find_user("61188"))
 
 #=>
 {
@@ -142,7 +142,7 @@ puts "#{ JSON.pretty_generate(client.find_user("61188")) }"
 ### You can list all active projects.
 
 ```ruby
-puts "#{ JSON.pretty_generate(client.projects(true)) }"
+client.projects(true)
 
 #=>
 {
@@ -168,7 +168,7 @@ puts "#{ JSON.pretty_generate(client.projects(true)) }"
 ### Retrieve screenshots for a specific project, within a specific timeframe.
 
 ```ruby
-puts "#{ JSON.pretty_generate(client.screenshots("2016-05-22","2016-05-24",projects: "112761")) }"
+client.screenshots("2016-05-22","2016-05-24",projects: "112761")
 
 #=>
 {

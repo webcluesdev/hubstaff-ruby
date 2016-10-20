@@ -21,29 +21,31 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 429
-      message: Too Many Requests
+      code: 200
+      message: OK
     headers:
       Connection:
       - keep-alive
       Content-Type:
       - application/json
       Content-Length:
-      - '44'
+      - '143'
       Status:
-      - 429 Too Many Requests
+      - 200 OK
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       Date:
-      - Tue, 18 Oct 2016 14:15:28 GMT
+      - Thu, 20 Oct 2016 15:30:02 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 67360c5f-9013-45fd-aa85-4490a1e269cb
+      - 237b6027-d432-42ca-9847-879eba31faf4
+      Etag:
+      - W/"58cb807aded7d11b2d2071b30c1095f7"
       X-Runtime:
-      - '0.012381'
+      - '0.514153'
       X-Rack-Cache:
       - invalidate, pass
       X-Powered-By:
@@ -54,7 +56,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"error":"You can''t make any more requests"}'
+      string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T20:29:14Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
     http_version: 
-  recorded_at: Tue, 18 Oct 2016 14:15:31 GMT
+  recorded_at: Thu, 20 Oct 2016 15:30:04 GMT
 recorded_with: VCR 3.0.3

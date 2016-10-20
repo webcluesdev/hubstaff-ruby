@@ -32,22 +32,22 @@ http_interactions:
       - chunked
       Status:
       - 200 OK
+      X-Rack-Cache:
+      - miss
       Cache-Control:
       - max-age=0, private, must-revalidate
       Date:
-      - Tue, 18 Oct 2016 14:23:37 GMT
+      - Thu, 20 Oct 2016 15:30:13 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
-      X-Request-Id:
-      - 787e2578-f1d8-4316-8bd2-4eb052089add
       Etag:
       - W/"2c1b8a6db5b665a6b9c8a883ea81bed5"
       X-Runtime:
-      - '0.065091'
-      X-Rack-Cache:
-      - miss
+      - '0.267269'
+      X-Request-Id:
+      - a0fcf4d1-e9c6-4a15-927b-2b464951911e
       X-Powered-By:
       - Phusion Passenger 5.0.30
       Server:
@@ -60,5 +60,5 @@ http_interactions:
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874,"notes":[{"id":716530,"description":"Practice Notes"}]}]}]}]}]}'
     http_version: 
-  recorded_at: Tue, 18 Oct 2016 14:23:39 GMT
+  recorded_at: Thu, 20 Oct 2016 15:30:15 GMT
 recorded_with: VCR 3.0.3
