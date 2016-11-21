@@ -3,7 +3,7 @@
 [![Build
 Status](https://semaphoreci.com/api/v1/rkcudjoe/hubstaff-ruby/branches/master/badge.svg)](https://semaphoreci.com/rkcudjoe/hubstaff-ruby)
 
-A Ruby toolkit for [Hubstaff](https://hubstaff.com/) API.
+A Ruby toolkit for [Hubstaff](https://hubstaff.com/) time tracking API.
 
 ## Installation
 
