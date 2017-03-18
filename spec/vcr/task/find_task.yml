@@ -32,18 +32,16 @@ http_interactions:
       - '33'
       Status:
       - 404 Not Found
-      Cache-Control:
-      - no-cache
       Date:
-      - Thu, 20 Oct 2016 15:30:20 GMT
+      - Sat, 18 Mar 2017 20:13:25 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - d4bd91ac-6e7e-4a1e-a46a-0700a7d6bced
+      - 88b40756-eb45-4db7-a124-007496babf78
       X-Runtime:
-      - '0.099420'
+      - '0.025931'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"Could not find record"}'
     http_version: 
-  recorded_at: Thu, 20 Oct 2016 15:30:23 GMT
+  recorded_at: Sat, 18 Mar 2017 20:13:25 GMT
 recorded_with: VCR 3.0.3

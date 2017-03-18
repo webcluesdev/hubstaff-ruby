@@ -32,20 +32,16 @@ http_interactions:
       - chunked
       Status:
       - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
       Date:
-      - Thu, 20 Oct 2016 15:30:18 GMT
+      - Sat, 18 Mar 2017 20:13:23 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 413f7a26-a938-4704-86c3-352472ad84e9
-      Etag:
-      - W/"e6b52471bf6802b38071fdd04001135b"
+      - 23e7f42d-1c6b-4269-816d-d77950859988
       X-Runtime:
-      - '0.020372'
+      - '0.034800'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,8 +52,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"projects":[{"id":112761,"name":"Build Ruby Gem","last_activity":"2016-09-29T20:29:14Z","status":"Active","description":null},{"id":120320,"name":"Hubstaff
+      string: '{"projects":[{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-14T15:36:16Z","status":"Active","description":null},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":"2016-09-29T17:55:17Z","status":"Active","description":null}]}'
     http_version: 
-  recorded_at: Thu, 20 Oct 2016 15:30:21 GMT
+  recorded_at: Sat, 18 Mar 2017 20:13:23 GMT
 recorded_with: VCR 3.0.3

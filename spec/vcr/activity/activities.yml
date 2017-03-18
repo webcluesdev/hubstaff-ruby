@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.hubstaff.com/v1/activities?start_time=2016-05-24&stop_time=2016-05-24
+    uri: https://api.hubstaff.com/v1/activities?start_time=2017-03-07&stop_time=2017-03-14
     body:
       encoding: US-ASCII
       string: ''
@@ -32,20 +32,16 @@ http_interactions:
       - '17'
       Status:
       - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
       Date:
-      - Thu, 20 Oct 2016 15:30:02 GMT
+      - Sat, 18 Mar 2017 20:13:11 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - e7b6caf9-de87-4c0c-8662-8f82cb77fd70
-      Etag:
-      - W/"891c5b02e3544afb4c01b4b07a421a93"
+      - 5e301f56-df90-4f76-8bbd-0b5f27227bc6
       X-Runtime:
-      - '0.049586'
+      - '0.029611'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -58,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"activities":[]}'
     http_version: 
-  recorded_at: Thu, 20 Oct 2016 15:30:05 GMT
+  recorded_at: Sat, 18 Mar 2017 20:13:11 GMT
 recorded_with: VCR 3.0.3

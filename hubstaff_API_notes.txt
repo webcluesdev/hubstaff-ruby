@@ -1,0 +1,2 @@
+- Date range for screenshots can't be more than 7 days.
+- Beware of rentention limit dates for your account.

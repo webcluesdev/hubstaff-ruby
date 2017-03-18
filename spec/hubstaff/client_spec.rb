@@ -9,7 +9,7 @@ module Hubstaff
 
     describe  "#authenticate" do
       it "returns the users auth_token" do
-        VCR.use_cassette('api/client', re_record_interval: 1) do
+        VCR.use_cassette('api/client', re_record_interval: 10000) do
           req = @client.authenticate(ENV['APP_EMAIL'],ENV["APP_PASSWORD"])
           expect(req.success?).to be_truthy
           expect(req.body['user']['auth_token']).to eql(ENV["AUTH_TOKEN"])

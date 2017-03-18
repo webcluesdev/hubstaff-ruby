@@ -10,35 +10,35 @@ class Hubstaff::Client
     describe '#activities' do
       it "returns a collection of all activities" do
         VCR.use_cassette('activity/activities', re_record_interval: 1000) do
-          req = @client.activities("2016-05-24", "2016-05-24")
+          req = @client.activities("2017-03-07", "2017-03-14")
           expect(req.success?).to be_truthy
         end
       end
 
       it "returns a collection of activities for a specific org" do
         VCR.use_cassette('activity/activities_org', re_record_interval: 1000) do
-          req = @client.activities("2016-05-24", "2016-05-24", orgs: "27572")
+          req = @client.activities("2017-03-07", "2017-03-14", orgs: "27572")
           expect(req.success?).to be_truthy
         end
       end
 
       it "returns a collection of activities for a specific project" do
         VCR.use_cassette('activity/activities_project', re_record_interval: 1000) do
-          req = @client.activities("2016-05-24", "2016-05-24", projects: "112761")
+          req = @client.activities("2017-03-07", "2017-03-14", projects: "112761")
           expect(req.success?).to be_truthy
         end
       end
 
       it "returns a collection of activities for a specific user" do
         VCR.use_cassette('activity/activites_user', re_record_interval: 1000) do
-          req = @client.activities("2016-05-24", "2016-05-24", users: "61188")
+          req = @client.activities("2017-03-07", "2017-03-14", users: "61188")
           expect(req.success?).to be_truthy
         end
       end
 
       it "returns a collection of activities starting at a offset" do
         VCR.use_cassette('activity/activites_offset', re_record_interval: 1000)do
-          req = @client.activities("2016-05-24", "2016-05-24", offset: 0)
+          req = @client.activities("2017-03-07", "2017-03-14", offset: 0)
           expect(req.success?).to be_truthy
         end
       end

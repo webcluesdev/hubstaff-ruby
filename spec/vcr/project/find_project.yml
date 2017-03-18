@@ -32,20 +32,16 @@ http_interactions:
       - '125'
       Status:
       - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
       Date:
-      - Thu, 20 Oct 2016 15:30:19 GMT
+      - Sat, 18 Mar 2017 20:13:24 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - bf09ba1b-b112-45b5-8304-81e42369e621
-      Etag:
-      - W/"ef43e9f210f64e7ab6301fb81d3324bb"
+      - cefd7db4-f6d6-4984-9bcc-866a8415b143
       X-Runtime:
-      - '0.050753'
+      - '0.022993'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,7 +52,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"project":{"id":112761,"name":"Build Ruby Gem","last_activity":"2016-09-29T20:29:14Z","status":"Active","description":null}}'
+      string: '{"project":{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-14T15:36:16Z","status":"Active","description":null}}'
     http_version: 
-  recorded_at: Thu, 20 Oct 2016 15:30:21 GMT
+  recorded_at: Sat, 18 Mar 2017 20:13:24 GMT
 recorded_with: VCR 3.0.3

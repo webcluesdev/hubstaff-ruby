@@ -32,20 +32,16 @@ http_interactions:
       - chunked
       Status:
       - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
       Date:
-      - Thu, 20 Oct 2016 15:30:23 GMT
+      - Sat, 18 Mar 2017 20:13:29 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 17898435-425f-41a5-8473-22da952cfcea
-      Etag:
-      - W/"96ac1d760bd5c70ab5a7a15a7ec3c0cf"
+      - e92cb72d-bfda-41bf-b891-e86055f6d728
       X-Runtime:
-      - '0.819429'
+      - '1.013004'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,9 +52,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-09-29T20:29:14Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
-        Ruby Gem","last_activity":"2016-09-29T20:29:14Z","status":"Active"},{"id":120320,"name":"Hubstaff
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-14T15:36:16Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
+        Ruby Gem","last_activity":"2017-03-14T15:36:16Z","status":"Active"},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":"2016-09-29T17:55:17Z","status":"Active"}]}]}'
     http_version: 
-  recorded_at: Thu, 20 Oct 2016 15:30:26 GMT
+  recorded_at: Sat, 18 Mar 2017 20:13:29 GMT
 recorded_with: VCR 3.0.3
