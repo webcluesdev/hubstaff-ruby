@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:23 GMT
+      - Sun, 19 Mar 2017 21:22:54 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 6ade573c-c66b-4f18-9d2e-8b64108869d1
+      - 68b2f588-d3ed-44e6-8a91-b1d36f68934d
       X-Runtime:
-      - '0.020057'
+      - '0.028903'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -52,7 +52,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"organization":{"id":27572,"name":"Hook Engine","last_activity":"2017-03-14T15:36:16Z"}}'
+      string: '{"organization":{"id":27572,"name":"Hook Engine","last_activity":"2017-03-19T21:10:00Z"}}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:23 GMT
+  recorded_at: Sun, 19 Mar 2017 21:22:54 GMT
 recorded_with: VCR 3.0.3

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:11 GMT
+      - Sun, 19 Mar 2017 21:21:24 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 91e23117-163d-4a46-8bbe-cc22bfcb9854
+      - a783aa53-1037-4b80-ae91-9da29cdf53f7
       X-Runtime:
-      - '0.040668'
+      - '0.027076'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"activities":[]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:11 GMT
+  recorded_at: Sun, 19 Mar 2017 21:21:24 GMT
 recorded_with: VCR 3.0.3

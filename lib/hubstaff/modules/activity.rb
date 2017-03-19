@@ -5,7 +5,6 @@ class Hubstaff::Client
       connection.get("activities") do |req|
         add_time_params(req,start_time,stop_time)
         add_filters_params(req,options)
-        parse_response(req)
       end
     end
 

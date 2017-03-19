@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 19:08:49 GMT
+      - Sun, 19 Mar 2017 18:55:06 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - ed94c9c1-2b1f-4874-9d4f-c9a54b09f908
+      - a93e4d78-1ef1-4ee1-9956-2396a14ee6f7
       X-Runtime:
-      - '0.265178'
+      - '0.273619'
       X-Rack-Cache:
       - invalidate, pass
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-14T15:36:16Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 19:08:49 GMT
+  recorded_at: Sun, 19 Mar 2017 18:55:06 GMT
 recorded_with: VCR 3.0.3

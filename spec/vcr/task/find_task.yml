@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 404 Not Found
       Date:
-      - Sat, 18 Mar 2017 20:13:25 GMT
+      - Sun, 19 Mar 2017 21:22:57 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 88b40756-eb45-4db7-a124-007496babf78
+      - 01ca8031-fa91-4ccc-a9de-e78c3152e745
       X-Runtime:
-      - '0.025931'
+      - '0.038306'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"Could not find record"}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:25 GMT
+  recorded_at: Sun, 19 Mar 2017 21:22:57 GMT
 recorded_with: VCR 3.0.3

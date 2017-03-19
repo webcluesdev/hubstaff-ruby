@@ -12,6 +12,7 @@ class Hubstaff::Client
         VCR.use_cassette('note/notes', re_record_interval: 1000) do
           req = @client.notes("2016-05-23", "2016-05-25")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -19,6 +20,7 @@ class Hubstaff::Client
         VCR.use_cassette('note/notes_org', re_record_interval: 1000) do
           req = @client.notes("2016-05-23", "2016-05-25", orgs: "27572")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -26,6 +28,7 @@ class Hubstaff::Client
         VCR.use_cassette('note/notes_project', re_record_interval: 1000) do
           req = @client.notes("2016-05-23", "2016-05-25", projects: "112761")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -33,6 +36,7 @@ class Hubstaff::Client
         VCR.use_cassette 'note/notes_user' do
           req = @client.notes("2016-05-23", "2016-05-25", users: "61188")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -40,6 +44,7 @@ class Hubstaff::Client
         VCR.use_cassette('note/notes_offset', re_record_interval: 1000) do
           req = @client.notes("2016-05-23", "2016-05-25", offset: 0)
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -49,6 +54,7 @@ class Hubstaff::Client
         VCR.use_cassette('note/find_note', re_record_interval: 1) do
           req = @client.find_note("716530")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end

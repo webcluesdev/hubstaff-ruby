@@ -2,68 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.hubstaff.com/v1/users?offset=0&organization_memberships=false&project_memberships=false
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Hubstaff-Ruby v0.0.1
-      App-Token:
-      - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
-      Auth-Token:
-      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      connection:
-      - close
-      content-type:
-      - application/json
-      content-length:
-      - '121'
-      status:
-      - 200 OK
-      cache-control:
-      - max-age=0, private, must-revalidate
-      date:
-      - Thu, 29 Sep 2016 03:23:21 GMT
-      vary:
-      - Origin
-      strict-transport-security:
-      - max-age=31536000
-      x-request-id:
-      - 18e4b8e6-c558-4ad0-803a-d8c43bb2b893
-      etag:
-      - W/"1603f05314cc5decff4b89e0fec0315b"
-      x-runtime:
-      - '0.735456'
-      x-rack-cache:
-      - miss
-      x-powered-by:
-      - Phusion Passenger 5.0.30
-      server:
-      - nginx/1.10.1 + Phusion Passenger 5.0.30
-      via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2016-05-24T01:25:21Z","email":"rkcudjoe@hookengine.com"}]}'
-    http_version: 
-  recorded_at: Thu, 29 Sep 2016 03:23:21 GMT
-- request:
-    method: get
     uri: https://api.hubstaff.com/v1/users?offset=0&organization_memberships=true&project_memberships=false
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -88,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:26:07 GMT
+      - Sun, 19 Mar 2017 21:23:00 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 99195f36-71a6-45aa-b613-a92fcb75f978
+      - 469b5292-eac0-4f47-85e6-07fa6ce1cd34
       X-Runtime:
-      - '1.096374'
+      - '1.059238'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -107,8 +52,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-14T15:36:16Z","email":"rkcudjoe@hookengine.com","organizations":[{"id":27572,"name":"Hook
-        Engine","last_activity":"2017-03-14T15:36:16Z"}]}]}'
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-19T21:10:00Z","email":"rkcudjoe@hookengine.com","organizations":[{"id":27572,"name":"Hook
+        Engine","last_activity":"2017-03-19T21:10:00Z"}]}]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:26:08 GMT
+  recorded_at: Sun, 19 Mar 2017 21:23:00 GMT
 recorded_with: VCR 3.0.3

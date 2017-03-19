@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:18 GMT
+      - Sun, 19 Mar 2017 21:22:50 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 5866fd97-e753-4950-b283-5d7d5f4c661c
+      - 0983709c-96ff-4f5c-a9af-d954064bb87a
       X-Runtime:
-      - '0.074339'
+      - '0.042611'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:18 GMT
+  recorded_at: Sun, 19 Mar 2017 21:22:50 GMT
 recorded_with: VCR 3.0.3

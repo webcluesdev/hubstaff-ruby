@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:25 GMT
+      - Sun, 19 Mar 2017 21:22:56 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 87892c22-9f34-472a-a836-67bb2b3ae5c5
+      - 9670f250-97fb-4b70-9b43-72ff0109cd26
       X-Runtime:
-      - '0.029878'
+      - '0.030548'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"screenshots":[{"id":361845748,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/3ba014f55b58d33df766033a5635d42f1ee8978b/0.jpg","time_slot":"2017-03-14T14:00:00Z","recorded_at":"2017-03-14T14:08:13Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361845769,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/a2b36477f10d5c2846716bde470d3325414ce28e/0.jpg","time_slot":"2017-03-14T14:10:00Z","recorded_at":"2017-03-14T14:11:15Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361860891,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/fecb25b42b425bb5846c5504108386bb6794c8b3/0.jpg","time_slot":"2017-03-14T14:20:00Z","recorded_at":"2017-03-14T14:28:22Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361869806,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/53998b0483eb932706861e3de90e73c995544655/0.jpg","time_slot":"2017-03-14T14:30:00Z","recorded_at":"2017-03-14T14:37:43Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361882103,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/2ef91613873463478cf7f2f34a905a990f49dfbe/0.jpg","time_slot":"2017-03-14T14:40:00Z","recorded_at":"2017-03-14T14:41:11Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361893866,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/25273e64c483f29ceec48599eb498bef0d0244c5/0.jpg","time_slot":"2017-03-14T14:50:00Z","recorded_at":"2017-03-14T14:58:57Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361905760,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/42ad00e24d21ce2a16fa112d2ee0afc613935a2d/0.jpg","time_slot":"2017-03-14T15:00:00Z","recorded_at":"2017-03-14T15:08:26Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361917697,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/7ff15b24dff1e2c927d03d004687ab26e3392ea6/0.jpg","time_slot":"2017-03-14T15:10:00Z","recorded_at":"2017-03-14T15:12:03Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361937564,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/437b087f223fbed170a6a915335dd3f57f8a258c/0.jpg","time_slot":"2017-03-14T15:20:00Z","recorded_at":"2017-03-14T15:35:31Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0},{"id":361937584,"url":"https://hubstaff-production.s3.amazonaws.com/screenshots/61188/2017/11/112761/cff0efe9c858f88083f5974068a787678a18b945/0.jpg","time_slot":"2017-03-14T15:30:00Z","recorded_at":"2017-03-14T15:36:16Z","user_id":61188,"project_id":112761,"offset_x":0,"offset_y":0,"width":1440,"height":900,"screen":0}]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:25 GMT
+  recorded_at: Sun, 19 Mar 2017 21:22:56 GMT
 recorded_with: VCR 3.0.3

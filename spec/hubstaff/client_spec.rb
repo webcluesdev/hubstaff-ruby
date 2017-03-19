@@ -31,5 +31,12 @@ module Hubstaff
         expect(@connection).to eq(nil)
       end
     end
+
+    describe "#parse_response" do
+      it "returns the body in JSON on success"
+
+      it "returns an error message on failure"
+
+    end
   end
 end

@@ -12,6 +12,7 @@ class Hubstaff::Client
         VCR.use_cassette('task/tasks',re_record_interval: 1000) do
           req = @client.tasks(projects: "112761")
           expect(req.success?).to be_falsy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -19,6 +20,7 @@ class Hubstaff::Client
         VCR.use_cassette('task/tasks_project', re_record_interval: 1000) do
           req = @client.tasks(projects: "112761")
           expect(req.success?).to be_falsy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -26,6 +28,7 @@ class Hubstaff::Client
         VCR.use_cassette('task/tasks_offset', re_record_interval: 1000)do
           req = @client.tasks(offset: 0)
           expect(req.success?).to be_falsy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -35,6 +38,7 @@ class Hubstaff::Client
         VCR.use_cassette('task/find_task', re_record_interval: 1000) do
           req = @client.find_task("716530")
           expect(req.success?).to be_falsy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end

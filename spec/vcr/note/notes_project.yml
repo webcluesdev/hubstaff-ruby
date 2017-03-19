@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:22 GMT
+      - Sun, 19 Mar 2017 21:22:53 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - f9e73952-ea50-4208-8b12-af24582ad796
+      - 8fb927c8-0e54-444a-9903-3e63e8405ba6
       X-Runtime:
-      - '0.028354'
+      - '0.027240'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"notes":[{"id":716530,"description":"Practice Notes","time_slot":"2016-05-23T22:20:00Z","recorded_at":"2016-06-04T19:08:22Z","user_id":61188,"project_id":112761}]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:22 GMT
+  recorded_at: Sun, 19 Mar 2017 21:22:53 GMT
 recorded_with: VCR 3.0.3

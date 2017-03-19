@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:24 GMT
+      - Sun, 19 Mar 2017 21:22:56 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - cefd7db4-f6d6-4984-9bcc-866a8415b143
+      - 63eff151-c62d-43a1-bd17-1ff97d39affd
       X-Runtime:
-      - '0.022993'
+      - '0.039314'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -52,7 +52,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"project":{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-14T15:36:16Z","status":"Active","description":null}}'
+      string: '{"project":{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-19T21:10:00Z","status":"Active","description":null}}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:24 GMT
+  recorded_at: Sun, 19 Mar 2017 21:22:56 GMT
 recorded_with: VCR 3.0.3

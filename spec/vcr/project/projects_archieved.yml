@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:24 GMT
+      - Sun, 19 Mar 2017 21:22:55 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 422ad990-72cb-43bf-8796-6f389c9dff20
+      - 6e63da0e-f51c-41bc-b361-fd03f86f301d
       X-Runtime:
-      - '0.020415'
+      - '0.020605'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -52,8 +52,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"projects":[{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-14T15:36:16Z","status":"Active","description":null},{"id":120320,"name":"Hubstaff
-        API tutorial","last_activity":"2016-09-29T17:55:17Z","status":"Active","description":null}]}'
+      string: '{"projects":[{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-19T21:10:00Z","status":"Active","description":null},{"id":120320,"name":"Hubstaff
+        API tutorial","last_activity":"2017-03-19T20:41:44Z","status":"Active","description":null}]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:24 GMT
+  recorded_at: Sun, 19 Mar 2017 21:22:55 GMT
 recorded_with: VCR 3.0.3

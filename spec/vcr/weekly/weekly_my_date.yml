@@ -2,69 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.hubstaff.com/v1/weekly/my?date=2016-05-24
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Hubstaff-Ruby v0.0.1
-      Auth-Token:
-      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
-      App-Token:
-      - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
-  response:
-    status:
-      code: 200
-      message: 
-    headers:
-      connection:
-      - close
-      content-type:
-      - application/json
-      transfer-encoding:
-      - chunked
-      status:
-      - 200 OK
-      cache-control:
-      - max-age=0, private, must-revalidate
-      date:
-      - Wed, 03 Aug 2016 02:25:54 GMT
-      vary:
-      - Origin
-      strict-transport-security:
-      - max-age=31536000
-      x-request-id:
-      - 73067b42-780f-4890-8943-9c30c5ac93f7
-      etag:
-      - W/"e0fa3a37b3ed03a41929d1bff2a7f3b4"
-      x-runtime:
-      - '0.042655'
-      x-rack-cache:
-      - miss
-      x-powered-by:
-      - Phusion Passenger 5.0.25
-      server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.25
-      via:
-      - 1.1 vegur
-    body:
-      encoding: ASCII-8BIT
-      string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":7874,"users":[{"id":61188,"name":"Raymond
-        Cudjoe","duration":7874,"dates":[{"date":"2016-05-23","duration":7874}]}]}]}'
-    http_version: 
-  recorded_at: Wed, 03 Aug 2016 02:25:55 GMT
-- request:
-    method: get
     uri: https://api.hubstaff.com/v1/weekly/my
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -89,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:26:09 GMT
+      - Sun, 19 Mar 2017 21:21:27 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 2482357b-6cec-4994-a1b6-aad16d4ec055
+      - a4a41779-f30f-41f9-8f8e-0e2142d1b5c9
       X-Runtime:
-      - '0.032832'
+      - '0.046628'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -108,8 +52,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":5553,"users":[{"id":61188,"name":"Raymond
-        Cudjoe","duration":5553,"dates":[{"date":"2017-03-14","duration":5553}]}]}]}'
+      string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":7250,"users":[{"id":61188,"name":"Raymond
+        Cudjoe","duration":7250,"dates":[{"date":"2017-03-14","duration":5553},{"date":"2017-03-19","duration":1697}]}]}]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:26:09 GMT
+  recorded_at: Sun, 19 Mar 2017 21:21:27 GMT
 recorded_with: VCR 3.0.3

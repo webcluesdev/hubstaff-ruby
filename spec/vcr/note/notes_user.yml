@@ -11,48 +11,48 @@ http_interactions:
       - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
-      Auth-Token:
-      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept:
+      - "*/*"
       App-Token:
       - 1u6rQ6kuB46U8kSYAXRPDaBvvAiB7GPMMxZVLii79KQ
+      Auth-Token:
+      - 5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
       code: 200
-      message: 
+      message: OK
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      transfer-encoding:
+      Transfer-Encoding:
       - chunked
-      status:
+      Status:
       - 200 OK
-      cache-control:
-      - max-age=0, private, must-revalidate
-      date:
-      - Tue, 02 Aug 2016 20:15:40 GMT
-      vary:
+      Date:
+      - Sat, 18 Mar 2017 22:08:13 GMT
+      Vary:
       - Origin
-      strict-transport-security:
+      Strict-Transport-Security:
       - max-age=31536000
-      x-request-id:
-      - 5ee40620-68b2-4774-acfc-b603942b61e8
-      etag:
-      - W/"0261e46d499a3d25147275d7cfb8c27b"
-      x-runtime:
-      - '0.078750'
-      x-rack-cache:
+      X-Request-Id:
+      - 657b89da-8394-4d2f-9b3a-e6c9305d0078
+      X-Runtime:
+      - '0.031295'
+      X-Rack-Cache:
       - miss
-      x-powered-by:
-      - Phusion Passenger 5.0.25
-      server:
-      - nginx/1.8.1 + Phusion Passenger 5.0.25
-      via:
+      X-Powered-By:
+      - Phusion Passenger 5.0.30
+      Server:
+      - nginx/1.10.1 + Phusion Passenger 5.0.30
+      Via:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
       string: '{"notes":[{"id":716530,"description":"Practice Notes","time_slot":"2016-05-23T22:20:00Z","recorded_at":"2016-06-04T19:08:22Z","user_id":61188,"project_id":112761}]}'
     http_version: 
-  recorded_at: Tue, 02 Aug 2016 20:15:40 GMT
+  recorded_at: Sat, 18 Mar 2017 22:08:13 GMT
 recorded_with: VCR 3.0.3

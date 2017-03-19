@@ -12,6 +12,7 @@ class Hubstaff::Client
         VCR.use_cassette('user/users', re_record_interval: 1000) do
           req = @client.users
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -27,6 +28,7 @@ class Hubstaff::Client
         VCR.use_cassette('user/users_orgs', re_record_interval: 1000) do
           req = @client.users(true,false)
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
 
@@ -34,6 +36,7 @@ class Hubstaff::Client
         VCR.use_cassette('user/users_projects', re_record_interval: 1000) do
           req = @client.users(false,true)
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -43,6 +46,7 @@ class Hubstaff::Client
         VCR.use_cassette('user/find_user', re_record_interval: 1000) do
           req = @client.find_user("61188")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -52,6 +56,7 @@ class Hubstaff::Client
         VCR.use_cassette('user/find_user_orgs', re_record_interval: 1000) do
           req = @client.find_user_orgs("61188")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -61,6 +66,7 @@ class Hubstaff::Client
         VCR.use_cassette('user/find_user_projects', re_record_interval: 1000) do
           req = @client.find_user_projects("61188")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end

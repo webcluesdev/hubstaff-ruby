@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Content-Type:
-      - application/vnd.api+json
+      - application/json
       User-Agent:
       - Hubstaff-Ruby v0.0.1
       Accept:
@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sat, 18 Mar 2017 20:13:29 GMT
+      - Sun, 19 Mar 2017 21:23:01 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - e92cb72d-bfda-41bf-b891-e86055f6d728
+      - 7aeac6a9-46a2-4d64-b05a-7b45999f38bc
       X-Runtime:
-      - '1.013004'
+      - '1.024295'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -52,9 +52,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-14T15:36:16Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
-        Ruby Gem","last_activity":"2017-03-14T15:36:16Z","status":"Active"},{"id":120320,"name":"Hubstaff
-        API tutorial","last_activity":"2016-09-29T17:55:17Z","status":"Active"}]}]}'
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-19T21:10:00Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
+        Ruby Gem","last_activity":"2017-03-19T21:10:00Z","status":"Active"},{"id":120320,"name":"Hubstaff
+        API tutorial","last_activity":"2017-03-19T20:41:44Z","status":"Active"}]}]}'
     http_version: 
-  recorded_at: Sat, 18 Mar 2017 20:13:29 GMT
+  recorded_at: Sun, 19 Mar 2017 21:23:01 GMT
 recorded_with: VCR 3.0.3

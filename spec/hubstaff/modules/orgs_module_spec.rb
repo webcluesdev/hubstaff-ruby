@@ -12,6 +12,7 @@ class Hubstaff::Client
         VCR.use_cassette('org/orgs', re_record_interval: 1000) do
           req = @client.organizations
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -21,6 +22,7 @@ class Hubstaff::Client
         VCR.use_cassette('org/find_org', re_record_interval: 1000) do
           req = @client.find_organization("27572")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -30,6 +32,7 @@ class Hubstaff::Client
         VCR.use_cassette('org/find_org_project', re_record_interval: 1000) do
           req = @client.find_org_projects("27572")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end
@@ -39,6 +42,7 @@ class Hubstaff::Client
         VCR.use_cassette('org/find_org_members', re_record_interval: 1000) do
           req = @client.find_org_members("27572")
           expect(req.success?).to be_truthy
+          expect(req.body).to be_an_instance_of(Hash)
         end
       end
     end

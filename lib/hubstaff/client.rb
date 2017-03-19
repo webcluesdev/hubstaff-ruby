@@ -65,15 +65,15 @@ module Hubstaff
     end
 
     def content_type
-      "application/vnd.api+json"
+      "application/json"
     end
 
     def parse_response(response)
       case response
       when 200..201
-        return JSON.parse(response.body)
+        return response.body
       when 400, 401, 403, 404, 406, 409, 429, 500, 502, 503
-        return JSON.parse(response.body)
+        return response.body['error']
       else
         return "Unexpected Error from hubstaff-ruby"
       end
