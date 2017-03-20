@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sun, 19 Mar 2017 21:22:47 GMT
+      - Mon, 20 Mar 2017 09:35:02 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 64ac8814-24b9-4a9f-aa4e-41c59dbc3830
+      - b94d0df4-ab06-4bc5-8485-4515c5e50789
       X-Runtime:
-      - '0.097529'
+      - '0.065153'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
         Cudjoe","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"projects":[{"id":112761,"name":"Build
         Ruby Gem","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Sun, 19 Mar 2017 21:22:47 GMT
+  recorded_at: Mon, 20 Mar 2017 09:35:02 GMT
 recorded_with: VCR 3.0.3

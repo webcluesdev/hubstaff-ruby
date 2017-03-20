@@ -28,20 +28,20 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '20'
       Status:
       - 200 OK
       Date:
-      - Sun, 19 Mar 2017 21:21:28 GMT
+      - Mon, 20 Mar 2017 09:35:19 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - dbcc97d5-51b2-4027-a34b-671d9ebd82eb
+      - f5961c3e-bce5-474a-a549-a9ad6a804cbb
       X-Runtime:
-      - '0.056933'
+      - '0.051071'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -51,9 +51,8 @@ http_interactions:
       Via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
-      string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":7245,"users":[{"id":61188,"name":"Raymond
-        Cudjoe","duration":7245,"dates":[{"date":"2017-03-14","duration":5553},{"date":"2017-03-19","duration":1692}]}]}]}'
+      encoding: UTF-8
+      string: '{"organizations":[]}'
     http_version: 
-  recorded_at: Sun, 19 Mar 2017 21:21:28 GMT
+  recorded_at: Mon, 20 Mar 2017 09:35:19 GMT
 recorded_with: VCR 3.0.3

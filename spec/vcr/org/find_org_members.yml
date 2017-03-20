@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sun, 19 Mar 2017 21:22:55 GMT
+      - Mon, 20 Mar 2017 09:35:09 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - f3655c1d-b7ac-44aa-9ab1-d451141d7771
+      - 0d8a55dc-a466-4f7f-82fc-771ef9d798d5
       X-Runtime:
-      - '0.061056'
+      - '0.047818'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -52,8 +52,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-19T21:10:00Z","email":"rkcudjoe@hookengine.com","pay_rate":"No
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-19T21:52:52Z","email":"rkcudjoe@hookengine.com","pay_rate":"No
         rate set"}]}'
     http_version: 
-  recorded_at: Sun, 19 Mar 2017 21:22:55 GMT
+  recorded_at: Mon, 20 Mar 2017 09:35:09 GMT
 recorded_with: VCR 3.0.3

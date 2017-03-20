@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sun, 19 Mar 2017 21:23:01 GMT
+      - Mon, 20 Mar 2017 09:35:15 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 7aeac6a9-46a2-4d64-b05a-7b45999f38bc
+      - 0886effd-a32f-406c-8b5a-e81443bc385d
       X-Runtime:
-      - '1.024295'
+      - '0.991676'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -52,9 +52,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-19T21:10:00Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
-        Ruby Gem","last_activity":"2017-03-19T21:10:00Z","status":"Active"},{"id":120320,"name":"Hubstaff
+      string: '{"users":[{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-19T21:52:52Z","email":"rkcudjoe@hookengine.com","projects":[{"id":112761,"name":"Build
+        Ruby Gem","last_activity":"2017-03-19T21:52:52Z","status":"Active"},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":"2017-03-19T20:41:44Z","status":"Active"}]}]}'
     http_version: 
-  recorded_at: Sun, 19 Mar 2017 21:23:01 GMT
+  recorded_at: Mon, 20 Mar 2017 09:35:15 GMT
 recorded_with: VCR 3.0.3

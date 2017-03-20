@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Sun, 19 Mar 2017 21:22:53 GMT
+      - Mon, 20 Mar 2017 09:35:08 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - acc5f884-1257-47d6-a05d-f969dfdfb8e7
+      - b6872eac-24c2-4c5c-a2d7-f64b3d20f8cb
       X-Runtime:
-      - '0.035716'
+      - '0.031968'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"notes":[{"id":716530,"description":"Practice Notes","time_slot":"2016-05-23T22:20:00Z","recorded_at":"2016-06-04T19:08:22Z","user_id":61188,"project_id":112761}]}'
     http_version: 
-  recorded_at: Sun, 19 Mar 2017 21:22:53 GMT
+  recorded_at: Mon, 20 Mar 2017 09:35:08 GMT
 recorded_with: VCR 3.0.3
