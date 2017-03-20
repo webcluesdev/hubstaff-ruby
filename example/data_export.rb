@@ -20,5 +20,5 @@ puts "#{ activity_data.body['activities'] }"
 screenshot_data = @client.screenshots("2017-03-10", "2017-03-15", orgs: "27572")
 
 screenshot_data.body['screenshots'].each do |screen_url|
-	puts screen_url['url']
+ puts screen_url['url']
 end
