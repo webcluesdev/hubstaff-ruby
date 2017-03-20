@@ -15,10 +15,10 @@ puts "Your current auth token is: #{ @client.auth_token }"
 
 activity_data = @client.activities("2017-03-07", "2017-03-14")
 
-puts "#{ activity_data.body['activities'] }"
+puts "#{ activity_data }"
 
 screenshot_data = @client.screenshots("2017-03-10", "2017-03-15", orgs: "27572")
 
-screenshot_data.body['screenshots'].each do |screen_url|
- puts screen_url['url']
-end
+puts screenshot_data["screenshots"]
+
+screenshot_data['screenshots'].each { |screen_url| puts screen_url['url'] }

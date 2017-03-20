@@ -1,17 +1,17 @@
 class Hubstaff::Client
   module Weekly
     def weekly_team(options={})
-      connection.get("weekly/team") do |req|
+      weekly_data = connection.get("weekly/team") do |req|
         add_filter_params(req,options)
-        parse_response(req)
       end
+      weekly_data.body
     end
 
     def weekly_my(options={})
-      connection.get("weekly/my") do |req|
+      weekly_data = connection.get("weekly/my") do |req|
         add_filter_params(req,options)
-        parse_response(req)
       end
+      weekly_data.body
     end
 
     def add_filter_params(req,options)

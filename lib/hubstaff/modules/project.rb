@@ -4,29 +4,28 @@ class Hubstaff::Client
     def projects(status=nil, offset=0)
       case status
       when "active" || "archived"
-        connection.get("projects?status=#{status}") do |req|
+        project_data = connection.get("projects?status=#{status}") do |req|
           add_offset(req,offset)
-          parse_response(req)
         end
+        project_data.body
       else
-      connection.get("projects") do |req|
+      project_data = connection.get("projects") do |req|
           add_offset(req,offset)
-          parse_response(req)
         end
+      project_data.body
       end
     end
 
     def find_project(project_id)
-      connection.get("projects/#{project_id}") do |req|
-        parse_response(req)
-      end
+      project_data = connection.get("projects/#{project_id}")
+      project_data.body
     end
 
     def find_project_members(project_id, offset=0)
-      connection.get("projects/#{project_id}/members") do |req|
+      project_data = connection.get("projects/#{project_id}/members") do |req|
         add_offset(req,offset)
-        parse_response(req)
       end
+      project_data.body
     end
 
     private

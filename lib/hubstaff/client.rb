@@ -24,9 +24,14 @@ module Hubstaff
       new_token = auth_conn.post do |req|
         req.headers['App-Token'] = app_token
         req.params = { email: email, password: password }
-        parse_response(req)
       end
+      parse_response(new_token)
       @auth_token = new_token.body['user']['auth_token']
+    end
+
+    def parse_response(response)
+      return JSON.parse(response.body['error']) unless
+      @auth_token == response.body['user']['auth_token']
     end
 
     def auth_token=(new_token)
@@ -71,17 +76,6 @@ module Hubstaff
 
     def content_type
       "application/json"
-    end
-
-    def parse_response(response)
-      case response
-      when 200..201
-        return response.body
-      when 400, 401, 403, 404, 406, 409, 429, 500, 502, 503
-        return response.body['error']
-      else
-        return "Unexpected Error from hubstaff-ruby"
-      end
     end
   end
 end

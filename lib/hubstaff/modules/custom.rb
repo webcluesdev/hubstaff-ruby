@@ -2,51 +2,51 @@ class Hubstaff::Client
   module Custom
 
     def custom_date_team(start_date, end_date, options={})
-      connection.get("custom/by_date/team") do |req|
+      custom_data = connection.get("custom/by_date/team") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
-        parse_response(req)
       end
+      custom_data.body
     end
 
     def custom_date_my(start_date, end_date, options={})
-      connection.get("custom/by_date/my") do |req|
+      custom_data = connection.get("custom/by_date/my") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
-        parse_response(req)
       end
+      custom_data.body
     end
 
     def custom_member_team(start_date, end_date, options={})
-      connection.get("custom/by_member/team") do |req|
+      custom_data = connection.get("custom/by_member/team") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
-        parse_response(req)
       end
+      custom_data.body
     end
 
     def custom_member_my(start_date, end_date, options={})
-      connection.get("custom/by_member/my") do |req|
+     custom_data = connection.get("custom/by_member/my") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
-        parse_response(req)
       end
+      custom_data.body
     end
 
     def custom_project_team(start_date, end_date, options={})
-      connection.get("custom/by_project/team") do |req|
+     custom_data = connection.get("custom/by_project/team") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
-        parse_response(req)
       end
+      custom_data.body
     end
 
     def custom_project_my(start_date, end_date, options={})
-      connection.get("custom/by_project/my") do |req|
+      custom_data = connection.get("custom/by_project/my") do |req|
         add_date_params(req,start_date, end_date)
         add_filter_params(req, options)
-        parse_response(req)
       end
+      custom_data.body
     end
 
     private

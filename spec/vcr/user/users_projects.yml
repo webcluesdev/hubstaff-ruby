@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Mon, 20 Mar 2017 15:06:52 GMT
+      - Mon, 20 Mar 2017 18:04:43 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 11d69b33-f4fd-4568-9a92-1ec4032ae9c9
+      - 19c9c648-da87-417a-ad41-7d9a42ad9c5d
       X-Runtime:
-      - '1.005700'
+      - '1.065836'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
         Ruby Gem","last_activity":"2017-03-19T21:52:52Z","status":"Active"},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":"2017-03-19T20:41:44Z","status":"Active"}]}]}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 15:06:52 GMT
+  recorded_at: Mon, 20 Mar 2017 18:04:43 GMT
 recorded_with: VCR 3.0.3

@@ -11,24 +11,21 @@ class Hubstaff::Client
       it "returns a collection of screenshots for a specific organization" do
         VCR.use_cassette('screen/screenshots_org', re_record_interval: 1000) do
           req = @client.screenshots("2017-03-10", "2017-03-15", orgs: "27572")
-          expect(req.success?).to be_truthy
-          expect(req.body).to be_an_instance_of(Hash)
+          expect(req).to be_an_instance_of(Hash)
         end
       end
 
       it "returns a collection of screenshots for a specific project" do
         VCR.use_cassette('screen/screenshots_project', re_record_interval: 1000) do
           req = @client.screenshots("2017-03-10", "2017-03-15", projects: "112761")
-          expect(req.success?).to be_truthy
-          expect(req.body).to be_an_instance_of(Hash)
+          expect(req).to be_an_instance_of(Hash)
         end
       end
 
       it "returns a collection of screenshots for a specific user" do
         VCR.use_cassette('screen/screenshots_user', re_record_interval: 1000) do
           req = @client.screenshots("2017-03-10", "2017-03-15", users: "61188")
-          expect(req.success?).to be_truthy
-          expect(req.body).to be_an_instance_of(Hash)
+          expect(req).to be_an_instance_of(Hash)
         end
       end
     end

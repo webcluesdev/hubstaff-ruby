@@ -2,30 +2,29 @@ class Hubstaff::Client
   module Organization
 
     def organizations(offset=0)
-      connection.get("organizations") do |req|
+      org_data = connection.get("organizations") do |req|
         add_offset(req,offset)
-        parse_response(req)
       end
+      org_data.body
     end
 
     def find_organization(org_id)
-      connection.get("organizations/#{org_id}") do |req|
-        parse_response(req)
-      end
+      org_data = connection.get("organizations/#{org_id}")
+      org_data.body
     end
 
     def find_org_projects(org_id, offset=0)
-      connection.get("organizations/#{org_id}/projects") do |req|
+      org_data = connection.get("organizations/#{org_id}/projects") do |req|
         add_offset(req,offset)
-        parse_response(req)
       end
+      org_data.body
     end
 
     def find_org_members(org_id, offset=0)
-      connection.get("organizations/#{org_id}/members") do |req|
+     org_data = connection.get("organizations/#{org_id}/members") do |req|
         add_offset(req,offset)
-        parse_response(req)
       end
+      org_data.body
     end
 
     private

@@ -2,11 +2,11 @@ class Hubstaff::Client
   module Activity
 
     def activities(start_time, stop_time, options={})
-      connection.get("activities") do |req|
+      activities_data = connection.get("activities") do |req|
         add_time_params(req,start_time,stop_time)
         add_filters_params(req,options)
-        parse_response(req)
       end
+      activities_data.body
     end
 
     private

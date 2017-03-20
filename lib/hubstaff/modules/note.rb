@@ -2,17 +2,16 @@ class Hubstaff::Client
   module Note
 
     def notes(start_time, stop_time, options={})
-      connection.get("notes") do |req|
+      notes_data = connection.get("notes") do |req|
         add_time_params(req,start_time,stop_time)
         add_filters_params(req,options)
-        parse_response(req)
       end
+      notes_data.body
     end
 
     def find_note(note_id)
-      connection.get("notes/#{note_id}") do |req|
-        parse_response(req)
-      end
+      note_data = connection.get("notes/#{note_id}")
+      note_data.body
     end
 
     private
