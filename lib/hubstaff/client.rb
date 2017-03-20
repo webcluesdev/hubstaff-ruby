@@ -25,13 +25,15 @@ module Hubstaff
         req.headers['App-Token'] = app_token
         req.params = { email: email, password: password }
       end
-      parse_response(new_token)
-      @auth_token = new_token.body['user']['auth_token']
+      parse_token(new_token)
     end
 
-    def parse_response(response)
-      return JSON.parse(response.body['error']) unless
-      @auth_token == response.body['user']['auth_token']
+    def parse_token(new_token)
+      if new_token.body['error'].nil?
+        @auth_token = new_token.body['user']['auth_token']
+      else
+        return new_token.body['error']
+      end
     end
 
     def auth_token=(new_token)
