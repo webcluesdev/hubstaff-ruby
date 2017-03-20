@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Mon, 20 Mar 2017 09:35:05 GMT
+      - Mon, 20 Mar 2017 15:06:42 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - d2fad54d-7015-4760-bc8d-d34f56d5b8f6
+      - 35380f4b-e602-46d4-8485-a3387d87daa5
       X-Runtime:
-      - '0.050247'
+      - '0.186707'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -56,5 +56,5 @@ http_interactions:
         Ruby Gem","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 09:35:05 GMT
+  recorded_at: Mon, 20 Mar 2017 15:06:42 GMT
 recorded_with: VCR 3.0.3

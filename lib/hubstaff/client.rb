@@ -21,16 +21,21 @@ module Hubstaff
 
     def authenticate(email, password)
       reset_connection
-      @auth_token = auth_conn.post do |req|
+      new_token = auth_conn.post do |req|
         req.headers['App-Token'] = app_token
         req.params = { email: email, password: password }
         parse_response(req)
       end
+      @auth_token = new_token.body['user']['auth_token']
     end
 
     def auth_token=(new_token)
       @auth_token = new_token
       reset_connection
+    end
+
+    def auth_token
+      @auth_token
     end
 
     def reset_connection

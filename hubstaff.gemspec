@@ -6,8 +6,8 @@ require 'hubstaff/version'
 Gem::Specification.new do |spec|
   spec.name          = "hubstaff-ruby"
   spec.version       = Hubstaff::VERSION
-  spec.authors       = ["Sean Mulligan", "Hook Engine", "Raymond Cudjoe"]
-  spec.email         = ["sean.mulligan85@gmail.com","rkcudjoe@hookengine.com","rkcudjoe@gmail.com"]
+  spec.authors       = ["Sean Mulligan", "HookOps", "Raymond Cudjoe"]
+  spec.email         = ["sean.mulligan85@gmail.com","rkcudjoe@hookops.com","rkcudjoe@gmail.com"]
 
   spec.summary       = %q{A Ruby toolkit for the Hubstaff time tracking API v1}
   spec.description   = %q{The simplest and most powerful time tracking API on the planet with Screenshots and Proof of Work.}

@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Mon, 20 Mar 2017 09:35:10 GMT
+      - Mon, 20 Mar 2017 15:06:47 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - b0b85783-a881-4a96-bc64-278e68a43bb3
+      - 01d39fa5-564c-431c-9290-1325574b89f3
       X-Runtime:
-      - '0.025425'
+      - '0.025172'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"project":{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-19T21:52:52Z","status":"Active","description":null}}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 09:35:10 GMT
+  recorded_at: Mon, 20 Mar 2017 15:06:47 GMT
 recorded_with: VCR 3.0.3

@@ -8,11 +8,10 @@ module Hubstaff
     end
 
     describe  "#authenticate" do
-      it "returns the users auth_token" do
+      it "returns the current auth_token" do
         VCR.use_cassette('api/client', re_record_interval: 10000) do
           req = @client.authenticate(ENV['APP_EMAIL'],ENV["APP_PASSWORD"])
-          expect(req.success?).to be_truthy
-          expect(req.body['user']['auth_token']).to eql(ENV["AUTH_TOKEN"])
+          expect(req).to eql(ENV["AUTH_TOKEN"])
         end
       end
     end
@@ -21,6 +20,12 @@ module Hubstaff
       it "sets a new auth_token" do
         @client.auth_token = ENV['APP_TOKEN']
         expect(@client.auth_token).to eq(ENV['APP_TOKEN'])
+      end
+    end
+
+    describe "#auth_token" do
+      it "returns current auth_token" do
+        expect(@client.auth_token).to eql(ENV["AUTH_TOKEN"])
       end
     end
 

@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Mon, 20 Mar 2017 09:34:57 GMT
+      - Mon, 20 Mar 2017 15:06:33 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - c468c4e0-9269-436b-8715-8eab59f307e1
+      - 319b439a-5777-4a53-b0e7-780785edcd4c
       X-Runtime:
-      - '0.037418'
+      - '0.046906'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"activities":[]}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 09:34:57 GMT
+  recorded_at: Mon, 20 Mar 2017 15:06:33 GMT
 recorded_with: VCR 3.0.3
