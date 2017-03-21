@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 400 Bad Request
       Date:
-      - Mon, 20 Mar 2017 18:48:54 GMT
+      - Tue, 21 Mar 2017 11:30:22 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - be328db9-06be-4dd3-bf50-9f2b1cc5ad8d
+      - 40674755-9cb3-4b37-8bc7-9e7df77ecdd5
       X-Runtime:
-      - '0.013873'
+      - '0.019500'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"projects: must be an array separated by commas"}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 18:48:54 GMT
+  recorded_at: Tue, 21 Mar 2017 11:30:22 GMT
 recorded_with: VCR 3.0.3

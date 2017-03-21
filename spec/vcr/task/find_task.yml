@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 404 Not Found
       Date:
-      - Mon, 20 Mar 2017 18:48:54 GMT
+      - Tue, 21 Mar 2017 11:30:22 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 3f9063fe-aef0-4a20-8ffe-b017ce70a6e8
+      - b5c9ada9-05b8-405e-bba5-c633a763e118
       X-Runtime:
-      - '0.060768'
+      - '0.121813'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"Could not find record"}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 18:48:54 GMT
+  recorded_at: Tue, 21 Mar 2017 11:30:22 GMT
 recorded_with: VCR 3.0.3

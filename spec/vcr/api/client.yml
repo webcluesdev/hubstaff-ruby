@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Mon, 20 Mar 2017 17:37:07 GMT
+      - Tue, 21 Mar 2017 11:30:06 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - 021f0440-ed7f-4367-81ff-ecd915acad1e
+      - 21be9369-5b4a-4431-8442-247da15bc81c
       X-Runtime:
-      - '0.236016'
+      - '0.268985'
       X-Rack-Cache:
       - invalidate, pass
       X-Powered-By:
@@ -54,5 +54,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"user":{"id":61188,"name":"Raymond Cudjoe","last_activity":"2017-03-19T21:52:52Z","auth_token":"5WZ1SCto37HBhH-AR1jn0kC3FXROO4b39CREMSyt_1U"}}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 17:37:07 GMT
+  recorded_at: Tue, 21 Mar 2017 11:30:07 GMT
 recorded_with: VCR 3.0.3

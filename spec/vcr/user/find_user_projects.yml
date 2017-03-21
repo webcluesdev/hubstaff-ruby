@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Mon, 20 Mar 2017 18:48:59 GMT
+      - Tue, 21 Mar 2017 11:30:27 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - f9c2b2da-654e-4876-a668-0c4f674c16d4
+      - 792bf01c-c1e8-409c-8f92-57748a2f7041
       X-Runtime:
-      - '0.030499'
+      - '0.042977'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -55,5 +55,5 @@ http_interactions:
       string: '{"projects":[{"id":112761,"name":"Build Ruby Gem","last_activity":"2017-03-19T21:52:52Z","status":"Active","description":null},{"id":120320,"name":"Hubstaff
         API tutorial","last_activity":"2017-03-19T20:41:44Z","status":"Active","description":null}]}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 18:48:58 GMT
+  recorded_at: Tue, 21 Mar 2017 11:30:27 GMT
 recorded_with: VCR 3.0.3

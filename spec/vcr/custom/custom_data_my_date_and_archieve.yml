@@ -33,15 +33,15 @@ http_interactions:
       Status:
       - 200 OK
       Date:
-      - Mon, 20 Mar 2017 18:48:44 GMT
+      - Tue, 21 Mar 2017 11:30:10 GMT
       Vary:
       - Origin
       Strict-Transport-Security:
       - max-age=31536000
       X-Request-Id:
-      - a4d93306-e759-4164-ad9a-dcb1de5328f6
+      - f0b6a356-deec-4c51-b794-81d11b08b916
       X-Runtime:
-      - '0.037240'
+      - '0.031960'
       X-Rack-Cache:
       - miss
       X-Powered-By:
@@ -55,5 +55,5 @@ http_interactions:
       string: '{"organizations":[{"id":27572,"name":"Hook Engine","duration":7874,"dates":[{"date":"2016-05-23","duration":7874,"users":[{"id":61188,"name":"Raymond
         Cudjoe","duration":7874,"projects":[{"id":112761,"name":"Build Ruby Gem","duration":7874}]}]}]}]}'
     http_version: 
-  recorded_at: Mon, 20 Mar 2017 18:48:44 GMT
+  recorded_at: Tue, 21 Mar 2017 11:30:11 GMT
 recorded_with: VCR 3.0.3
